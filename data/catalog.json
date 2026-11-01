@@ -1,0 +1,5383 @@
+{
+ "categories": [
+  {
+   "id": "vegetables",
+   "name": "Vegetables",
+   "icon": "fa-leaf",
+   "image": "https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Leafy Vegetables",
+    "Root Vegetables",
+    "Fresh Vegetables",
+    "Exotic Vegetables"
+   ]
+  },
+  {
+   "id": "fruits",
+   "name": "Fruits",
+   "icon": "fa-apple",
+   "image": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Fresh Fruits",
+    "Citrus Fruits",
+    "Tropical Fruits",
+    "Seasonal Fruits",
+    "Exotic Fruits"
+   ]
+  },
+  {
+   "id": "dairy-eggs",
+   "name": "Dairy & Eggs",
+   "icon": "fa-coffee",
+   "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Milk",
+    "Curd & Yogurt",
+    "Paneer",
+    "Cheese",
+    "Butter",
+    "Cream",
+    "Eggs"
+   ]
+  },
+  {
+   "id": "biscuits-cookies",
+   "name": "Biscuits & Cookies",
+   "icon": "fa-cutlery",
+   "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Glucose Biscuits",
+    "Cream Biscuits",
+    "Marie Biscuits",
+    "Cookies",
+    "Crackers",
+    "Wafer Biscuits"
+   ]
+  },
+  {
+   "id": "chocolates-sweets",
+   "name": "Chocolates & Sweets",
+   "icon": "fa-gift",
+   "image": "https://images.unsplash.com/photo-1548907040-4baa42d10919?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Chocolates",
+    "Chocolate Bars",
+    "Candies",
+    "Toffees",
+    "Indian Sweets"
+   ]
+  },
+  {
+   "id": "icecream-frozen",
+   "name": "Ice Cream & Frozen Desserts",
+   "icon": "fa-snowflake-o",
+   "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Ice Cream",
+    "Ice Cream Cups",
+    "Ice Cream Cones",
+    "Kulfi",
+    "Frozen Desserts"
+   ]
+  },
+  {
+   "id": "snacks-namkeen",
+   "name": "Snacks & Namkeen",
+   "icon": "fa-cubes",
+   "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Chips",
+    "Kurkure",
+    "Popcorn",
+    "Namkeen",
+    "Bhujia & Sev",
+    "Nuts & Peanuts",
+    "Nachos"
+   ]
+  },
+  {
+   "id": "drinks-beverages",
+   "name": "Drinks & Beverages",
+   "icon": "fa-tint",
+   "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Soft Drinks",
+    "Fruit Juices",
+    "Energy Drinks",
+    "Soda",
+    "Packaged Water",
+    "Coconut Water"
+   ]
+  },
+  {
+   "id": "tea-coffee",
+   "name": "Tea, Coffee & Health Drinks",
+   "icon": "fa-coffee",
+   "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Tea",
+    "Green Tea",
+    "Coffee",
+    "Hot Chocolate",
+    "Health Drinks"
+   ]
+  },
+  {
+   "id": "atta-flour",
+   "name": "Atta & Flour",
+   "icon": "fa-archive",
+   "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Wheat Atta",
+    "Multigrain Atta",
+    "Maida",
+    "Besan",
+    "Suji & Rava",
+    "Rice Flour",
+    "Other Flours"
+   ]
+  },
+  {
+   "id": "rice-grains",
+   "name": "Rice & Grains",
+   "icon": "fa-database",
+   "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Basmati Rice",
+    "Regular Rice",
+    "Brown Rice",
+    "Poha",
+    "Dalia",
+    "Other Grains"
+   ]
+  },
+  {
+   "id": "dal-pulses",
+   "name": "Dal & Pulses",
+   "icon": "fa-circle-o",
+   "image": "https://images.unsplash.com/photo-1585994192701-f1a505c817ea?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Toor Dal",
+    "Moong Dal",
+    "Masoor Dal",
+    "Chana Dal",
+    "Urad Dal",
+    "Rajma",
+    "Chickpeas",
+    "Other Pulses"
+   ]
+  },
+  {
+   "id": "oil-ghee",
+   "name": "Oil & Ghee",
+   "icon": "fa-flask",
+   "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Sunflower Oil",
+    "Soybean Oil",
+    "Mustard Oil",
+    "Groundnut Oil",
+    "Rice Bran Oil",
+    "Olive Oil",
+    "Ghee"
+   ]
+  },
+  {
+   "id": "spices-masala",
+   "name": "Spices & Masala",
+   "icon": "fa-fire",
+   "image": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Whole Spices",
+    "Powder Spices",
+    "Garam Masala",
+    "Chaat Masala",
+    "Kitchen Masala",
+    "Salt"
+   ]
+  },
+  {
+   "id": "sugar-sweeteners",
+   "name": "Sugar & Sweeteners",
+   "icon": "fa-heart",
+   "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Sugar",
+    "Jaggery",
+    "Honey",
+    "Sugar Free"
+   ]
+  },
+  {
+   "id": "sauces-spreads",
+   "name": "Sauces & Spreads",
+   "icon": "fa-spoon",
+   "image": "https://images.unsplash.com/photo-1528751014936-863e6e7a319c?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Tomato Ketchup",
+    "Mayonnaise",
+    "Chutney",
+    "Pasta Sauce",
+    "Schezwan Sauce",
+    "Jam",
+    "Peanut Butter",
+    "Chocolate Spread"
+   ]
+  },
+  {
+   "id": "instant-packaged",
+   "name": "Instant & Packaged Food",
+   "icon": "fa-bolt",
+   "image": "https://images.unsplash.com/photo-1612927601601-6638404737ce?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Instant Noodles",
+    "Pasta",
+    "Soup",
+    "Ready-to-Eat Meals",
+    "Ready-to-Cook Meals",
+    "Canned Food"
+   ]
+  },
+  {
+   "id": "frozen-food",
+   "name": "Frozen Food",
+   "icon": "fa-snowflake-o",
+   "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Frozen Vegetables",
+    "French Fries",
+    "Nuggets",
+    "Momos",
+    "Frozen Paratha",
+    "Frozen Snacks",
+    "Frozen Meat"
+   ]
+  },
+  {
+   "id": "bakery",
+   "name": "Bakery",
+   "icon": "fa-birthday-cake",
+   "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Bread",
+    "Brown Bread",
+    "Pav & Bun",
+    "Cakes",
+    "Muffins",
+    "Rusk",
+    "Croissants"
+   ]
+  },
+  {
+   "id": "dry-fruits",
+   "name": "Dry Fruits & Nuts",
+   "icon": "fa-diamond",
+   "image": "https://images.unsplash.com/photo-1508061252966-f72fb4029f69?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Almonds",
+    "Cashews",
+    "Raisins",
+    "Walnuts",
+    "Pistachios",
+    "Dates",
+    "Mixed Dry Fruits"
+   ]
+  },
+  {
+   "id": "personal-care",
+   "name": "Personal Care",
+   "icon": "fa-user",
+   "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Bath & Body",
+    "Shampoo & Conditioner",
+    "Hair Care",
+    "Skin Care",
+    "Oral Care",
+    "Deodorants",
+    "Shaving & Grooming"
+   ]
+  },
+  {
+   "id": "cleaning-household",
+   "name": "Cleaning & Household",
+   "icon": "fa-home",
+   "image": "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Laundry",
+    "Dishwashing",
+    "Floor Cleaning",
+    "Toilet Cleaning",
+    "Kitchen Cleaning",
+    "Garbage Bags",
+    "Air Fresheners"
+   ]
+  },
+  {
+   "id": "paper-disposable",
+   "name": "Paper & Disposable",
+   "icon": "fa-file-text-o",
+   "image": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Tissues",
+    "Toilet Paper",
+    "Paper Towels",
+    "Paper Plates",
+    "Paper Cups",
+    "Aluminium Foil",
+    "Cling Wrap"
+   ]
+  },
+  {
+   "id": "baby-care",
+   "name": "Baby Care",
+   "icon": "fa-smile-o",
+   "image": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Diapers",
+    "Baby Food",
+    "Baby Wipes",
+    "Baby Shampoo",
+    "Baby Soap",
+    "Baby Care Accessories"
+   ]
+  },
+  {
+   "id": "pet-supplies",
+   "name": "Pet Supplies",
+   "icon": "fa-paw",
+   "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=500&auto=format&fit=crop&q=60",
+   "subcategories": [
+    "Dog Food",
+    "Cat Food",
+    "Pet Treats",
+    "Pet Toys",
+    "Pet Grooming"
+   ]
+  }
+ ],
+ "products": [
+  {
+   "id": "veg-palak-leafy",
+   "title": "Fresh Farm Spinach (Palak)",
+   "category": "vegetables",
+   "subcategory": "Leafy Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "250 g bunch",
+     "price": 20,
+     "oldPrice": 28
+    },
+    {
+     "unit": "500 g pack",
+     "price": 38,
+     "oldPrice": 50
+    }
+   ],
+   "rating": "4.7 (1.2k)",
+   "stock": 45,
+   "image": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=500&auto=format&fit=crop&q=60",
+   "description": "Hydroponic pesticide-free iron-rich tender green spinach leaves washed and tied.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "veg-coriander-leafy",
+   "title": "Fresh Green Coriander (Dhaniya)",
+   "category": "vegetables",
+   "subcategory": "Leafy Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "100 g bunch",
+     "price": 12,
+     "oldPrice": 18
+    },
+    {
+     "unit": "250 g bunch",
+     "price": 26,
+     "oldPrice": 35
+    }
+   ],
+   "rating": "4.8 (2.4k)",
+   "stock": 80,
+   "image": "https://images.unsplash.com/photo-1592417817098-8f3d69102a5c?w=500&auto=format&fit=crop&q=60",
+   "description": "Highly fragrant farm-plucked coriander leaves with fresh root stems for garnishing.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "veg-fenugreek-methi",
+   "title": "Tender Fresh Methi (Fenugreek)",
+   "category": "vegetables",
+   "subcategory": "Leafy Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "250 g bunch",
+     "price": 24,
+     "oldPrice": 32
+    }
+   ],
+   "rating": "4.6 (890)",
+   "stock": 30,
+   "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60",
+   "description": "Natural aromatic fenugreek leaves harvested fresh daily, ideal for aloo methi and parathas.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "veg-onion-nasik",
+   "title": "Nashik Pink Red Onions (Pyaaz)",
+   "category": "vegetables",
+   "subcategory": "Root Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "1 kg",
+     "price": 35,
+     "oldPrice": 48
+    },
+    {
+     "unit": "2 kg",
+     "price": 68,
+     "oldPrice": 95
+    },
+    {
+     "unit": "5 kg bag",
+     "price": 165,
+     "oldPrice": 220
+    }
+   ],
+   "rating": "4.7 (5.5k)",
+   "stock": 150,
+   "image": "https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=500&auto=format&fit=crop&q=60",
+   "description": "Crisp, pungent onions straight from Nashik growers with thin, dry skins.",
+   "isBestSeller": true,
+   "isFreshPick": true,
+   "isDailyEssential": true
+  },
+  {
+   "id": "veg-potato-yellow",
+   "title": "Fresh Yellow Potato (Aloo)",
+   "category": "vegetables",
+   "subcategory": "Root Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "1 kg",
+     "price": 28,
+     "oldPrice": 38
+    },
+    {
+     "unit": "2 kg",
+     "price": 54,
+     "oldPrice": 75
+    },
+    {
+     "unit": "5 kg bag",
+     "price": 130,
+     "oldPrice": 180
+    }
+   ],
+   "rating": "4.8 (4.8k)",
+   "stock": 200,
+   "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500&auto=format&fit=crop&q=60",
+   "description": "Clean, washed yellow potatoes suitable for boiling, crispy fries, and curries.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": true
+  },
+  {
+   "id": "veg-ginger-adrak",
+   "title": "Fresh Mountain Ginger (Adrak)",
+   "category": "vegetables",
+   "subcategory": "Root Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "100 g",
+     "price": 18,
+     "oldPrice": 25
+    },
+    {
+     "unit": "250 g",
+     "price": 42,
+     "oldPrice": 55
+    }
+   ],
+   "rating": "4.8 (1.9k)",
+   "stock": 65,
+   "image": "",
+   "description": "Soil-washed spicy ginger root with high gingerol content for daily chai and gravies.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "veg-garlic-lehsun",
+   "title": "Desi White Garlic Bulbs (Lehsun)",
+   "category": "vegetables",
+   "subcategory": "Root Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "200 g pack",
+     "price": 45,
+     "oldPrice": 60
+    },
+    {
+     "unit": "500 g pack",
+     "price": 105,
+     "oldPrice": 140
+    }
+   ],
+   "rating": "4.7 (2.1k)",
+   "stock": 75,
+   "image": "https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?w=500&auto=format&fit=crop&q=60",
+   "description": "Pungent, tightly wrapped garlic cloves rich in allicin for health and tadka.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "veg-cabbage-green",
+   "title": "Fresh Green Leafy Cabbage",
+   "category": "vegetables",
+   "subcategory": "Fresh Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "1 pc (approx 500g)",
+     "price": 25,
+     "oldPrice": 35
+    },
+    {
+     "unit": "2 pcs pack",
+     "price": 48,
+     "oldPrice": 65
+    }
+   ],
+   "rating": "4.5 (820)",
+   "stock": 40,
+   "image": "https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?w=500&auto=format&fit=crop&q=60",
+   "description": "Crispy sweet cabbage heads ideal for salads, slaws, and vegetable stir-fries.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "veg-carrot-red",
+   "title": "Crunchy Red Carrots (Gajar)",
+   "category": "vegetables",
+   "subcategory": "Fresh Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 30,
+     "oldPrice": 42
+    },
+    {
+     "unit": "1 kg",
+     "price": 58,
+     "oldPrice": 80
+    }
+   ],
+   "rating": "4.6 (990)",
+   "stock": 55,
+   "image": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=500&auto=format&fit=crop&q=60",
+   "description": "Juicy sweet carrots loaded with Vitamin A, ideal for daily salads and gajar halwa.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "veg-tomato-hybrid",
+   "title": "Farm Ripe Red Tomatoes (Tamatar)",
+   "category": "vegetables",
+   "subcategory": "Fresh Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 22,
+     "oldPrice": 30
+    },
+    {
+     "unit": "1 kg",
+     "price": 42,
+     "oldPrice": 58
+    }
+   ],
+   "rating": "4.8 (3.9k)",
+   "stock": 110,
+   "image": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=500&auto=format&fit=crop&q=60",
+   "description": "Firm, plump red hybrid tomatoes with juicy pulp for everyday curry bases.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "veg-broccoli-exotic",
+   "title": "Fresh Exotic Broccoli Florets",
+   "category": "vegetables",
+   "subcategory": "Exotic Vegetables",
+   "brand": "Nature's Basket",
+   "variants": [
+    {
+     "unit": "1 pc (approx 350g)",
+     "price": 65,
+     "oldPrice": 90
+    },
+    {
+     "unit": "2 pcs pack",
+     "price": 125,
+     "oldPrice": 175
+    }
+   ],
+   "rating": "4.8 (740)",
+   "stock": 25,
+   "image": "https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=500&auto=format&fit=crop&q=60",
+   "description": "Tender, dark-green nutrient-dense broccoli florets grown under shade-net farms.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "veg-bell-peppers-color",
+   "title": "Exotic Red & Yellow Bell Peppers",
+   "category": "vegetables",
+   "subcategory": "Exotic Vegetables",
+   "brand": "Nature's Basket",
+   "variants": [
+    {
+     "unit": "2 pcs twin pack",
+     "price": 85,
+     "oldPrice": 115
+    }
+   ],
+   "rating": "4.7 (520)",
+   "stock": 20,
+   "image": "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=500&auto=format&fit=crop&q=60",
+   "description": "Sweet, crunchy hydroponic colored capsicums that add vibrant color to pasta.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fruit-apple-shimla",
+   "title": "Shimla Crisp Red Apples",
+   "category": "fruits",
+   "subcategory": "Fresh Fruits",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "500 g (2-3 pcs)",
+     "price": 85,
+     "oldPrice": 110
+    },
+    {
+     "unit": "1 kg pack",
+     "price": 165,
+     "oldPrice": 210
+    }
+   ],
+   "rating": "4.8 (2.8k)",
+   "stock": 60,
+   "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=500&auto=format&fit=crop&q=60",
+   "description": "Naturally sweet and crunchy unpolished orchard apples directly from Himachal.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fruit-banana-robusta",
+   "title": "Golden Ripe Bananas (Kela)",
+   "category": "fruits",
+   "subcategory": "Fresh Fruits",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "6 pcs bunch",
+     "price": 35,
+     "oldPrice": 45
+    },
+    {
+     "unit": "12 pcs dozen",
+     "price": 65,
+     "oldPrice": 85
+    }
+   ],
+   "rating": "4.9 (4.1k)",
+   "stock": 90,
+   "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=500&auto=format&fit=crop&q=60",
+   "description": "Potassium-rich, naturally ripened sweet robusta bananas for morning smoothies.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "fruit-orange-nagpur",
+   "title": "Nagpur Sweet Juicy Orange (Santra)",
+   "category": "fruits",
+   "subcategory": "Citrus Fruits",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 55,
+     "oldPrice": 70
+    },
+    {
+     "unit": "1 kg",
+     "price": 105,
+     "oldPrice": 140
+    }
+   ],
+   "rating": "4.8 (1.9k)",
+   "stock": 50,
+   "image": "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?w=500&auto=format&fit=crop&q=60",
+   "description": "Natural sweet oranges full of bioavailable Vitamin C without wax coating.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fruit-lime-seedless",
+   "title": "Seedless Green Lime (Nimbu)",
+   "category": "fruits",
+   "subcategory": "Citrus Fruits",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "200 g (4-5 pcs)",
+     "price": 25,
+     "oldPrice": 35
+    },
+    {
+     "unit": "500 g pack",
+     "price": 55,
+     "oldPrice": 75
+    }
+   ],
+   "rating": "4.7 (1.4k)",
+   "stock": 70,
+   "image": "https://images.unsplash.com/photo-1590502593747-42a996133562?w=500&auto=format&fit=crop&q=60",
+   "description": "Thin-skinned aromatic juicy lemons essential for salads and fresh lemon water.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "fruit-mango-alphonso",
+   "title": "Ratnagiri Alphonso Mango (Hapus)",
+   "category": "fruits",
+   "subcategory": "Tropical Fruits",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "6 pcs box",
+     "price": 450,
+     "oldPrice": 600
+    },
+    {
+     "unit": "12 pcs box",
+     "price": 850,
+     "oldPrice": 1150
+    }
+   ],
+   "rating": "4.9 (4.5k)",
+   "stock": 35,
+   "image": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=500&auto=format&fit=crop&q=60",
+   "description": "Hand-harvested GI-tagged authentic Alphonso mangoes with rich saffron pulp.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fruit-papaya-disco",
+   "title": "Sweet Yellow Papaya (Papita)",
+   "category": "fruits",
+   "subcategory": "Tropical Fruits",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "1 pc (approx 1 kg)",
+     "price": 55,
+     "oldPrice": 75
+    }
+   ],
+   "rating": "4.6 (980)",
+   "stock": 40,
+   "image": "https://images.unsplash.com/photo-1517282009859-f000ec3b26fe?w=500&auto=format&fit=crop&q=60",
+   "description": "Enzyme-rich digestive fruit with sweet red-orange flesh and firm texture.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fruit-watermelon-striped",
+   "title": "Sweet Red Striped Watermelon",
+   "category": "fruits",
+   "subcategory": "Seasonal Fruits",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "1 pc (2.5 - 3 kg)",
+     "price": 89,
+     "oldPrice": 120
+    }
+   ],
+   "rating": "4.8 (1.6k)",
+   "stock": 30,
+   "image": "",
+   "description": "Naturally sweet and juicy red seedless watermelon straight from riverbed farms.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fruit-avocado-hass",
+   "title": "Imported Hass Avocado",
+   "category": "fruits",
+   "subcategory": "Exotic Fruits",
+   "brand": "Nature's Basket",
+   "variants": [
+    {
+     "unit": "1 pc (ripe)",
+     "price": 99,
+     "oldPrice": 140
+    },
+    {
+     "unit": "2 pcs pack",
+     "price": 189,
+     "oldPrice": 260
+    }
+   ],
+   "rating": "4.9 (1.1k)",
+   "stock": 20,
+   "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=500&auto=format&fit=crop&q=60",
+   "description": "Creamy Hass avocados rich in heart-healthy monounsaturated fats and fiber.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fruit-dragon-fruit",
+   "title": "Pink Dragon Fruit (Pitaya)",
+   "category": "fruits",
+   "subcategory": "Exotic Fruits",
+   "brand": "Nature's Basket",
+   "variants": [
+    {
+     "unit": "1 pc (approx 350g)",
+     "price": 85,
+     "oldPrice": 120
+    }
+   ],
+   "rating": "4.7 (650)",
+   "stock": 15,
+   "image": "https://images.unsplash.com/photo-1527325678964-54921661f888?w=500&auto=format&fit=crop&q=60",
+   "description": "Vibrant pink skin with white seeded flesh, packed with antioxidants.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dairy-amul-taaza",
+   "title": "Amul Taaza Toned Fresh Milk",
+   "category": "dairy-eggs",
+   "subcategory": "Milk",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "500 ml pouch",
+     "price": 27,
+     "oldPrice": 30
+    },
+    {
+     "unit": "1 Liter pouch",
+     "price": 54,
+     "oldPrice": 60
+    }
+   ],
+   "rating": "4.9 (5.8k)",
+   "stock": 120,
+   "image": "",
+   "description": "Pasteurized homogenized toned cow milk with balanced 3.0% fat.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "dairy-amul-gold",
+   "title": "Amul Gold Full Cream Fresh Milk",
+   "category": "dairy-eggs",
+   "subcategory": "Milk",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "500 ml pouch",
+     "price": 33,
+     "oldPrice": 35
+    },
+    {
+     "unit": "1 Liter pouch",
+     "price": 66,
+     "oldPrice": 70
+    }
+   ],
+   "rating": "4.9 (4.9k)",
+   "stock": 100,
+   "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=500&auto=format&fit=crop&q=60",
+   "description": "Thick pasteurized full cream milk with 6.0% fat, ideal for rich tea and desserts.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "dairy-mother-dahi",
+   "title": "Mother Dairy Classic Dahi (Curd)",
+   "category": "dairy-eggs",
+   "subcategory": "Curd & Yogurt",
+   "brand": "Mother Dairy",
+   "variants": [
+    {
+     "unit": "400 g tub",
+     "price": 40,
+     "oldPrice": 45
+    },
+    {
+     "unit": "1 kg bucket",
+     "price": 95,
+     "oldPrice": 110
+    }
+   ],
+   "rating": "4.8 (2.8k)",
+   "stock": 60,
+   "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500&auto=format&fit=crop&q=60",
+   "description": "Thick, creamy probiotic-rich set curd prepared from pure dairy milk.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "dairy-greek-yogurt",
+   "title": "Epigamia Natural Greek Yogurt",
+   "category": "dairy-eggs",
+   "subcategory": "Curd & Yogurt",
+   "brand": "Epigamia",
+   "variants": [
+    {
+     "unit": "90 g cup",
+     "price": 45,
+     "oldPrice": 50
+    },
+    {
+     "unit": "Pack of 4 cups",
+     "price": 170,
+     "oldPrice": 200
+    }
+   ],
+   "rating": "4.9 (1.6k)",
+   "stock": 35,
+   "image": "https://images.unsplash.com/photo-1571212515416-fef01fc43637?w=500&auto=format&fit=crop&q=60",
+   "description": "Strained high-protein Greek yogurt with zero preservatives and no added sugar.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dairy-amul-paneer",
+   "title": "Amul Fresh Malai Paneer",
+   "category": "dairy-eggs",
+   "subcategory": "Paneer",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "200 g pack",
+     "price": 85,
+     "oldPrice": 95
+    },
+    {
+     "unit": "500 g pack",
+     "price": 210,
+     "oldPrice": 235
+    }
+   ],
+   "rating": "4.8 (3.1k)",
+   "stock": 75,
+   "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&auto=format&fit=crop&q=60",
+   "description": "Rich, soft and creamy cottage cheese made from pasteurized cow milk.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "dairy-amul-cheese-slices",
+   "title": "Amul Processed Cheese Slices",
+   "category": "dairy-eggs",
+   "subcategory": "Cheese",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "200 g (10 slices)",
+     "price": 135,
+     "oldPrice": 150
+    },
+    {
+     "unit": "400 g (20 slices)",
+     "price": 260,
+     "oldPrice": 290
+    }
+   ],
+   "rating": "4.9 (4.4k)",
+   "stock": 50,
+   "image": "https://images.unsplash.com/photo-1624806992066-5ffcf7ca186b?w=500&auto=format&fit=crop&q=60",
+   "description": "Individually wrapped creamy cheese slices for sandwiches, toasts, and burgers.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dairy-mozzarella-block",
+   "title": "Amul Pizza Mozzarella Cheese Block",
+   "category": "dairy-eggs",
+   "subcategory": "Cheese",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "200 g block",
+     "price": 125,
+     "oldPrice": 140
+    }
+   ],
+   "rating": "4.8 (1.9k)",
+   "stock": 40,
+   "image": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=500&auto=format&fit=crop&q=60",
+   "description": "High-stretch mozzarella cheese that gives the classic restaurant pizza pull.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dairy-amul-butter",
+   "title": "Amul Pasteurized Salted Butter",
+   "category": "dairy-eggs",
+   "subcategory": "Butter",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "100 g",
+     "price": 56,
+     "oldPrice": 60
+    },
+    {
+     "unit": "500 g",
+     "price": 275,
+     "oldPrice": 295
+    }
+   ],
+   "rating": "4.9 (7.2k)",
+   "stock": 110,
+   "image": "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=500&auto=format&fit=crop&q=60",
+   "description": "The classic Utterly Butterly Delicious pure dairy butter.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "dairy-amul-cream",
+   "title": "Amul Fresh Low Fat Cream",
+   "category": "dairy-eggs",
+   "subcategory": "Cream",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "250 ml tetra pack",
+     "price": 65,
+     "oldPrice": 72
+    },
+    {
+     "unit": "1 Liter pack",
+     "price": 230,
+     "oldPrice": 260
+    }
+   ],
+   "rating": "4.8 (2.2k)",
+   "stock": 45,
+   "image": "",
+   "description": "Sterilized low-fat cream for fruit salads, rich gravies, and desserts.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dairy-eggoz-brown",
+   "title": "Farm Fresh Brown Protein Eggs",
+   "category": "dairy-eggs",
+   "subcategory": "Eggs",
+   "brand": "Eggoz",
+   "variants": [
+    {
+     "unit": "6 pcs pack",
+     "price": 65,
+     "oldPrice": 80
+    },
+    {
+     "unit": "12 pcs pack",
+     "price": 125,
+     "oldPrice": 155
+    },
+    {
+     "unit": "30 pcs tray",
+     "price": 280,
+     "oldPrice": 350
+    }
+   ],
+   "rating": "4.9 (2.6k)",
+   "stock": 80,
+   "image": "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=500&auto=format&fit=crop&q=60",
+   "description": "Nutritious brown eggs gathered daily from clean bio-secure poultry farms.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "bisc-parle-g",
+   "title": "Parle-G Original Glucose Biscuits",
+   "category": "biscuits-cookies",
+   "subcategory": "Glucose Biscuits",
+   "brand": "Parle",
+   "variants": [
+    {
+     "unit": "250 g pack",
+     "price": 25,
+     "oldPrice": 30
+    },
+    {
+     "unit": "800 g mega pack",
+     "price": 75,
+     "oldPrice": 85
+    }
+   ],
+   "rating": "4.9 (9.8k)",
+   "stock": 140,
+   "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=500&auto=format&fit=crop&q=60",
+   "description": "India's beloved tea biscuit filled with goodness of milk and wheat.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "bisc-oreo-vanilla",
+   "title": "Cadbury Oreo Vanilla Creme Sandwich",
+   "category": "biscuits-cookies",
+   "subcategory": "Cream Biscuits",
+   "brand": "Cadbury",
+   "variants": [
+    {
+     "unit": "120 g pack",
+     "price": 35,
+     "oldPrice": 40
+    },
+    {
+     "unit": "300 g family pack",
+     "price": 85,
+     "oldPrice": 100
+    }
+   ],
+   "rating": "4.8 (5.2k)",
+   "stock": 60,
+   "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500&auto=format&fit=crop&q=60",
+   "description": "Crispy dark cocoa biscuits filled with smooth sweet vanilla creme.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "bisc-marie-gold",
+   "title": "Britannia Marie Gold Tea Biscuits",
+   "category": "biscuits-cookies",
+   "subcategory": "Marie Biscuits",
+   "brand": "Britannia",
+   "variants": [
+    {
+     "unit": "300 g pack",
+     "price": 40,
+     "oldPrice": 48
+    },
+    {
+     "unit": "1 kg mega box",
+     "price": 120,
+     "oldPrice": 145
+    }
+   ],
+   "rating": "4.7 (4.1k)",
+   "stock": 75,
+   "image": "",
+   "description": "Crisp, light low-fat tea biscuits enriched with 10 essential vitamins.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "bisc-dark-fantasy",
+   "title": "Sunfeast Dark Fantasy Choco Fills",
+   "category": "biscuits-cookies",
+   "subcategory": "Cookies",
+   "brand": "Sunfeast",
+   "variants": [
+    {
+     "unit": "75 g pack",
+     "price": 40,
+     "oldPrice": 50
+    },
+    {
+     "unit": "300 g box",
+     "price": 140,
+     "oldPrice": 175
+    }
+   ],
+   "rating": "4.9 (6.2k)",
+   "stock": 70,
+   "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500&auto=format&fit=crop&q=60",
+   "description": "Baked gourmet cookies loaded with molten velvety chocolate inside.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "bisc-monaco-crackers",
+   "title": "Parle Monaco Salted Crackers",
+   "category": "biscuits-cookies",
+   "subcategory": "Crackers",
+   "brand": "Parle",
+   "variants": [
+    {
+     "unit": "200 g pack",
+     "price": 30,
+     "oldPrice": 35
+    },
+    {
+     "unit": "400 g saver pack",
+     "price": 58,
+     "oldPrice": 70
+    }
+   ],
+   "rating": "4.7 (3.1k)",
+   "stock": 80,
+   "image": "",
+   "description": "Light and crunchy salted savory crackers that melt in your mouth.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "bisc-pickwick-wafers",
+   "title": "Pickwick Crispy Strawberry Wafers",
+   "category": "biscuits-cookies",
+   "subcategory": "Wafer Biscuits",
+   "brand": "Pickwick",
+   "variants": [
+    {
+     "unit": "150 g pack",
+     "price": 45,
+     "oldPrice": 55
+    }
+   ],
+   "rating": "4.6 (1.2k)",
+   "stock": 50,
+   "image": "",
+   "description": "Multi-layered crunchy wafer fingers filled with rich strawberry cream.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "choc-dairy-milk-silk",
+   "title": "Cadbury Dairy Milk Silk Chocolate",
+   "category": "chocolates-sweets",
+   "subcategory": "Chocolates",
+   "brand": "Cadbury",
+   "variants": [
+    {
+     "unit": "60 g bar",
+     "price": 80,
+     "oldPrice": 85
+    },
+    {
+     "unit": "150 g bar",
+     "price": 175,
+     "oldPrice": 195
+    }
+   ],
+   "rating": "4.9 (8.5k)",
+   "stock": 95,
+   "image": "https://images.unsplash.com/photo-1548907040-4baa42d10919?w=500&auto=format&fit=crop&q=60",
+   "description": "Creamier, smoother and softer milk chocolate made from fine cocoa butter.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "choc-kitkat-4finger",
+   "title": "Nestle KitKat 4 Finger Chocolate Bar",
+   "category": "chocolates-sweets",
+   "subcategory": "Chocolate Bars",
+   "brand": "Nestle",
+   "variants": [
+    {
+     "unit": "38 g bar",
+     "price": 30,
+     "oldPrice": 30
+    },
+    {
+     "unit": "Pack of 3 bars",
+     "price": 85,
+     "oldPrice": 90
+    }
+   ],
+   "rating": "4.8 (5.1k)",
+   "stock": 85,
+   "image": "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=500&auto=format&fit=crop&q=60",
+   "description": "Crisp wafer fingers coated with smooth milk chocolate. Have a break, have a KitKat!",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "choc-alpenliebe-gold",
+   "title": "Alpenliebe Caramel Candies Pouch",
+   "category": "chocolates-sweets",
+   "subcategory": "Candies",
+   "brand": "Alpenliebe",
+   "variants": [
+    {
+     "unit": "150 g pouch (45 candies)",
+     "price": 48,
+     "oldPrice": 55
+    }
+   ],
+   "rating": "4.7 (1.9k)",
+   "stock": 60,
+   "image": "",
+   "description": "Rich buttery caramel hard boiled candies loved across generations.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "choc-pulse-mango",
+   "title": "Pass Pass Pulse Raw Mango Candies",
+   "category": "chocolates-sweets",
+   "subcategory": "Toffees",
+   "brand": "Pulse",
+   "variants": [
+    {
+     "unit": "200 g pouch",
+     "price": 50,
+     "oldPrice": 60
+    }
+   ],
+   "rating": "4.9 (5.3k)",
+   "stock": 70,
+   "image": "",
+   "description": "Tangy raw mango candy with surprise chatpata masala center.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "choc-kaju-katli",
+   "title": "Haldiram's Traditional Kaju Katli",
+   "category": "chocolates-sweets",
+   "subcategory": "Indian Sweets",
+   "brand": "Haldiram's",
+   "variants": [
+    {
+     "unit": "250 g box",
+     "price": 240,
+     "oldPrice": 280
+    },
+    {
+     "unit": "500 g box",
+     "price": 460,
+     "oldPrice": 540
+    }
+   ],
+   "rating": "4.9 (4.2k)",
+   "stock": 40,
+   "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&auto=format&fit=crop&q=60",
+   "description": "Melt-in-mouth cashew diamond fudge prepared with pure cashews and real silver vark.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "choc-gulab-jamun-tin",
+   "title": "Bikaji Shahi Gulab Jamun Tin",
+   "category": "chocolates-sweets",
+   "subcategory": "Indian Sweets",
+   "brand": "Bikaji",
+   "variants": [
+    {
+     "unit": "500 g tin",
+     "price": 130,
+     "oldPrice": 155
+    },
+    {
+     "unit": "1 kg tin",
+     "price": 240,
+     "oldPrice": 290
+    }
+   ],
+   "rating": "4.8 (2.5k)",
+   "stock": 50,
+   "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=60",
+   "description": "Soft spongy dumplings soaked in aromatic cardamom and rose flavored sugar syrup.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "ice-amul-vanilla",
+   "title": "Amul Real Milk Vanilla Magic Tub",
+   "category": "icecream-frozen",
+   "subcategory": "Ice Cream",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "1 Liter tub",
+     "price": 140,
+     "oldPrice": 160
+    }
+   ],
+   "rating": "4.8 (3.2k)",
+   "stock": 45,
+   "image": "",
+   "description": "Rich and creamy real cow milk vanilla ice cream made without vegetable oils.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "ice-kwality-cup",
+   "title": "Kwality Wall's Chocolate Ice Cream Cup",
+   "category": "icecream-frozen",
+   "subcategory": "Ice Cream Cups",
+   "brand": "Kwality Wall's",
+   "variants": [
+    {
+     "unit": "100 ml cup",
+     "price": 30,
+     "oldPrice": 35
+    },
+    {
+     "unit": "Pack of 4 cups",
+     "price": 110,
+     "oldPrice": 140
+    }
+   ],
+   "rating": "4.7 (2.4k)",
+   "stock": 60,
+   "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500&auto=format&fit=crop&q=60",
+   "description": "Smooth velvety chocolate scoop dessert in a single-serve cup.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "ice-cornetto-cone",
+   "title": "Kwality Wall's Cornetto Double Choco Cone",
+   "category": "icecream-frozen",
+   "subcategory": "Ice Cream Cones",
+   "brand": "Kwality Wall's",
+   "variants": [
+    {
+     "unit": "105 ml cone",
+     "price": 50,
+     "oldPrice": 55
+    }
+   ],
+   "rating": "4.9 (4.9k)",
+   "stock": 55,
+   "image": "https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?w=500&auto=format&fit=crop&q=60",
+   "description": "Crispy wafer cone filled with chocolate ice cream and ending with chocolate tip.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "ice-vadilal-kulfi",
+   "title": "Vadilal Malai Shahi Kulfi Stick",
+   "category": "icecream-frozen",
+   "subcategory": "Kulfi",
+   "brand": "Vadilal",
+   "variants": [
+    {
+     "unit": "60 ml stick",
+     "price": 40,
+     "oldPrice": 45
+    }
+   ],
+   "rating": "4.8 (1.7k)",
+   "stock": 40,
+   "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=500&auto=format&fit=crop&q=60",
+   "description": "Traditional slow-boiled milk rabdi kulfi infused with green cardamom and nuts.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "ice-cassata-slice",
+   "title": "Amul Classic Cassata Cut",
+   "category": "icecream-frozen",
+   "subcategory": "Frozen Desserts",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "150 ml slice",
+     "price": 65,
+     "oldPrice": 75
+    }
+   ],
+   "rating": "4.7 (1.2k)",
+   "stock": 30,
+   "image": "",
+   "description": "Triple flavor ice cream layer set over moist sponge cake coated with nuts.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "snack-lays-masala",
+   "title": "Lay's India's Magic Masala Potato Chips",
+   "category": "snacks-namkeen",
+   "subcategory": "Chips",
+   "brand": "Lay's",
+   "variants": [
+    {
+     "unit": "50 g pack",
+     "price": 20,
+     "oldPrice": 20
+    },
+    {
+     "unit": "90 g party pack",
+     "price": 40,
+     "oldPrice": 40
+    }
+   ],
+   "rating": "4.8 (5.9k)",
+   "stock": 110,
+   "image": "",
+   "description": "Crispy golden potato chips tossed in spicy Indian seasonings and herbs.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "snack-kurkure-munch",
+   "title": "Kurkure Masala Munch Crunchy Strands",
+   "category": "snacks-namkeen",
+   "subcategory": "Kurkure",
+   "brand": "Kurkure",
+   "variants": [
+    {
+     "unit": "82 g pack",
+     "price": 20,
+     "oldPrice": 20
+    },
+    {
+     "unit": "165 g pack",
+     "price": 40,
+     "oldPrice": 40
+    }
+   ],
+   "rating": "4.8 (5.1k)",
+   "stock": 95,
+   "image": "",
+   "description": "Chatpata puffed rice and corn snack packed with iconic spicy masala.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "snack-act2-popcorn",
+   "title": "Act II Instant Golden Butter Popcorn",
+   "category": "snacks-namkeen",
+   "subcategory": "Popcorn",
+   "brand": "Act II",
+   "variants": [
+    {
+     "unit": "70 g pouch",
+     "price": 35,
+     "oldPrice": 40
+    },
+    {
+     "unit": "Pack of 3 pouches",
+     "price": 99,
+     "oldPrice": 120
+    }
+   ],
+   "rating": "4.7 (2.1k)",
+   "stock": 65,
+   "image": "https://images.unsplash.com/photo-1578849278619-e73505e9610f?w=500&auto=format&fit=crop&q=60",
+   "description": "Ready-to-cook savory golden butter corn kernels for fresh home popping.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "snack-haldiram-khattamitha",
+   "title": "Haldiram's Khatta Meetha Mixture",
+   "category": "snacks-namkeen",
+   "subcategory": "Namkeen",
+   "brand": "Haldiram's",
+   "variants": [
+    {
+     "unit": "200 g pack",
+     "price": 45,
+     "oldPrice": 50
+    },
+    {
+     "unit": "400 g pouch",
+     "price": 88,
+     "oldPrice": 100
+    }
+   ],
+   "rating": "4.8 (3.9k)",
+   "stock": 80,
+   "image": "",
+   "description": "Sweet and sour mixture of sev, fried green peas, sago balls, and peanuts.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "snack-haldiram-bhujia",
+   "title": "Haldiram's Nagpur Aloo Bhujia",
+   "category": "snacks-namkeen",
+   "subcategory": "Bhujia & Sev",
+   "brand": "Haldiram's",
+   "variants": [
+    {
+     "unit": "150 g pack",
+     "price": 42,
+     "oldPrice": 50
+    },
+    {
+     "unit": "400 g pouch",
+     "price": 105,
+     "oldPrice": 125
+    }
+   ],
+   "rating": "4.8 (5.3k)",
+   "stock": 90,
+   "image": "",
+   "description": "Crispy spicy potato and moth gram flour sev infused with mint flavoring.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "snack-salted-peanuts",
+   "title": "Haldiram's Classic Salted Peanuts",
+   "category": "snacks-namkeen",
+   "subcategory": "Nuts & Peanuts",
+   "brand": "Haldiram's",
+   "variants": [
+    {
+     "unit": "140 g pouch",
+     "price": 35,
+     "oldPrice": 40
+    }
+   ],
+   "rating": "4.7 (1.7k)",
+   "stock": 60,
+   "image": "",
+   "description": "Crunchy golden roasted peanuts lightly dusted with pure sea salt.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "snack-doritos-cheese",
+   "title": "Doritos Cheese Supreme Nachos",
+   "category": "snacks-namkeen",
+   "subcategory": "Nachos",
+   "brand": "Doritos",
+   "variants": [
+    {
+     "unit": "60 g pack",
+     "price": 30,
+     "oldPrice": 35
+    },
+    {
+     "unit": "140 g pack",
+     "price": 65,
+     "oldPrice": 75
+    }
+   ],
+   "rating": "4.8 (3.1k)",
+   "stock": 70,
+   "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=500&auto=format&fit=crop&q=60",
+   "description": "Crunchy toasted corn tortilla chips bursting with bold cheddar cheese seasoning.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "drink-thums-up",
+   "title": "Thums Up Soft Drink Can",
+   "category": "drinks-beverages",
+   "subcategory": "Soft Drinks",
+   "brand": "Coca-Cola",
+   "variants": [
+    {
+     "unit": "300 ml can",
+     "price": 40,
+     "oldPrice": 40
+    },
+    {
+     "unit": "750 ml bottle",
+     "price": 45,
+     "oldPrice": 45
+    }
+   ],
+   "rating": "4.7 (3.5k)",
+   "stock": 110,
+   "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=60",
+   "description": "Strong, fizzy carbonated cola with a bold spicy punch. Taste the thunder!",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "drink-sprite-bottle",
+   "title": "Sprite Lemon-Lime Soft Drink",
+   "category": "drinks-beverages",
+   "subcategory": "Soft Drinks",
+   "brand": "Coca-Cola",
+   "variants": [
+    {
+     "unit": "750 ml bottle",
+     "price": 45,
+     "oldPrice": 45
+    }
+   ],
+   "rating": "4.7 (2.8k)",
+   "stock": 90,
+   "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=500&auto=format&fit=crop&q=60",
+   "description": "Clear crisp lemon-lime flavored fizzy thirst quencher.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "drink-real-mixed-juice",
+   "title": "Real Fruit Power Mixed Fruit Juice",
+   "category": "drinks-beverages",
+   "subcategory": "Fruit Juices",
+   "brand": "Real",
+   "variants": [
+    {
+     "unit": "1 Liter pack",
+     "price": 120,
+     "oldPrice": 140
+    }
+   ],
+   "rating": "4.8 (4.9k)",
+   "stock": 70,
+   "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=500&auto=format&fit=crop&q=60",
+   "description": "Nutritious blend of 9 handpicked fruits packed with natural vitamins.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "drink-red-bull",
+   "title": "Red Bull Energy Drink Can",
+   "category": "drinks-beverages",
+   "subcategory": "Energy Drinks",
+   "brand": "Red Bull",
+   "variants": [
+    {
+     "unit": "250 ml can",
+     "price": 125,
+     "oldPrice": 125
+    },
+    {
+     "unit": "Pack of 4 cans",
+     "price": 480,
+     "oldPrice": 500
+    }
+   ],
+   "rating": "4.9 (6.3k)",
+   "stock": 60,
+   "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=60",
+   "description": "Vitalizes body and mind with caffeine, taurine, and B-group vitamins.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "drink-bisleri-soda",
+   "title": "Bisleri Rocking Club Soda",
+   "category": "drinks-beverages",
+   "subcategory": "Soda",
+   "brand": "Bisleri",
+   "variants": [
+    {
+     "unit": "750 ml bottle",
+     "price": 20,
+     "oldPrice": 20
+    }
+   ],
+   "rating": "4.7 (1.9k)",
+   "stock": 100,
+   "image": "https://images.unsplash.com/photo-1527661591475-527312dd65f5?w=500&auto=format&fit=crop&q=60",
+   "description": "Extra fizzy packaged club soda with crisp refreshing carbonation.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "drink-kinley-water",
+   "title": "Kinley Purified Packaged Water",
+   "category": "drinks-beverages",
+   "subcategory": "Packaged Water",
+   "brand": "Coca-Cola",
+   "variants": [
+    {
+     "unit": "1 Liter bottle",
+     "price": 20,
+     "oldPrice": 20
+    },
+    {
+     "unit": "2 Liters bottle",
+     "price": 35,
+     "oldPrice": 35
+    }
+   ],
+   "rating": "4.8 (7.1k)",
+   "stock": 200,
+   "image": "https://images.unsplash.com/photo-1548839140-29a749e1bc4e?w=500&auto=format&fit=crop&q=60",
+   "description": "Reverse osmosis purified mineral water with added essential salts.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "drink-raw-coconut",
+   "title": "Raw Pressery 100% Tender Coconut Water",
+   "category": "drinks-beverages",
+   "subcategory": "Coconut Water",
+   "brand": "Raw Pressery",
+   "variants": [
+    {
+     "unit": "200 ml bottle",
+     "price": 60,
+     "oldPrice": 70
+    }
+   ],
+   "rating": "4.8 (2.4k)",
+   "stock": 45,
+   "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&auto=format&fit=crop&q=60",
+   "description": "Natural electrolyte-rich fresh tender coconut water without added sugar.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "tea-tata-premium",
+   "title": "Tata Tea Premium Desh Ki Chai",
+   "category": "tea-coffee",
+   "subcategory": "Tea",
+   "brand": "Tata Tea",
+   "variants": [
+    {
+     "unit": "250 g pouch",
+     "price": 120,
+     "oldPrice": 140
+    },
+    {
+     "unit": "1 kg pack",
+     "price": 430,
+     "oldPrice": 510
+    }
+   ],
+   "rating": "4.8 (5.5k)",
+   "stock": 90,
+   "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=500&auto=format&fit=crop&q=60",
+   "description": "Assam tea grains and long leaves blend for strong aroma and bright liquor.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "tea-wagh-bakri",
+   "title": "Wagh Bakri Premium CTC Leaf Tea",
+   "category": "tea-coffee",
+   "subcategory": "Tea",
+   "brand": "Wagh Bakri",
+   "variants": [
+    {
+     "unit": "500 g pouch",
+     "price": 260,
+     "oldPrice": 300
+    }
+   ],
+   "rating": "4.8 (3.2k)",
+   "stock": 65,
+   "image": "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=500&auto=format&fit=crop&q=60",
+   "description": "Authentic Gujarati kadak tea leaves that give rich consistency with milk.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "tea-tetley-green",
+   "title": "Tetley Green Tea Bags (Lemon & Honey)",
+   "category": "tea-coffee",
+   "subcategory": "Green Tea",
+   "brand": "Tetley",
+   "variants": [
+    {
+     "unit": "25 tea bags pack",
+     "price": 155,
+     "oldPrice": 180
+    }
+   ],
+   "rating": "4.8 (3.1k)",
+   "stock": 50,
+   "image": "https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?w=500&auto=format&fit=crop&q=60",
+   "description": "Antioxidant-dense whole green tea bags infused with natural citrus notes.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "coffee-nescafe-classic",
+   "title": "Nescafe Classic 100% Pure Instant Coffee",
+   "category": "tea-coffee",
+   "subcategory": "Coffee",
+   "brand": "Nescafe",
+   "variants": [
+    {
+     "unit": "50 g jar",
+     "price": 175,
+     "oldPrice": 195
+    },
+    {
+     "unit": "100 g jar",
+     "price": 340,
+     "oldPrice": 385
+    }
+   ],
+   "rating": "4.9 (4.8k)",
+   "stock": 75,
+   "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&auto=format&fit=crop&q=60",
+   "description": "Pure Arabica & Robusta coffee beans delivering rich morning aroma.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "coffee-bru-gold",
+   "title": "Bru Gold 100% Freeze Dried Coffee",
+   "category": "tea-coffee",
+   "subcategory": "Coffee",
+   "brand": "Bru",
+   "variants": [
+    {
+     "unit": "50 g jar",
+     "price": 190,
+     "oldPrice": 220
+    }
+   ],
+   "rating": "4.8 (1.8k)",
+   "stock": 40,
+   "image": "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=500&auto=format&fit=crop&q=60",
+   "description": "Freeze-dried coffee crystals preserving premium plantation coffee aroma.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "drink-cadbury-hotchoc",
+   "title": "Cadbury Hot Chocolate Drink Mix",
+   "category": "tea-coffee",
+   "subcategory": "Hot Chocolate",
+   "brand": "Cadbury",
+   "variants": [
+    {
+     "unit": "200 g jar",
+     "price": 165,
+     "oldPrice": 190
+    }
+   ],
+   "rating": "4.8 (2.1k)",
+   "stock": 45,
+   "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=500&auto=format&fit=crop&q=60",
+   "description": "Thick velvety cocoa powder mix for warm bedtime milk mugs.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "health-bournvita",
+   "title": "Cadbury Bournvita Nutrition Powder",
+   "category": "tea-coffee",
+   "subcategory": "Health Drinks",
+   "brand": "Bournvita",
+   "variants": [
+    {
+     "unit": "500 g refill",
+     "price": 235,
+     "oldPrice": 260
+    },
+    {
+     "unit": "1 kg jar",
+     "price": 440,
+     "oldPrice": 490
+    }
+   ],
+   "rating": "4.9 (6.1k)",
+   "stock": 65,
+   "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500&auto=format&fit=crop&q=60",
+   "description": "Malted chocolate drink mix enriched with Vitamin D, Iron, and Zinc.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "flour-aashirvaad-sharbati",
+   "title": "Aashirvaad Sharbati Whole Wheat Atta",
+   "category": "atta-flour",
+   "subcategory": "Wheat Atta",
+   "brand": "Aashirvaad",
+   "variants": [
+    {
+     "unit": "1 kg pack",
+     "price": 65,
+     "oldPrice": 75
+    },
+    {
+     "unit": "5 kg bag",
+     "price": 275,
+     "oldPrice": 320
+    },
+    {
+     "unit": "10 kg bag",
+     "price": 530,
+     "oldPrice": 620
+    }
+   ],
+   "rating": "4.9 (7.8k)",
+   "stock": 110,
+   "image": "",
+   "description": "Stone-ground MP Sharbati wheat flour that absorbs more water for soft rotis.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "flour-aashirvaad-multigrain",
+   "title": "Aashirvaad Multigrain Atta (6 Grains)",
+   "category": "atta-flour",
+   "subcategory": "Multigrain Atta",
+   "brand": "Aashirvaad",
+   "variants": [
+    {
+     "unit": "5 kg bag",
+     "price": 320,
+     "oldPrice": 375
+    }
+   ],
+   "rating": "4.8 (3.9k)",
+   "stock": 50,
+   "image": "",
+   "description": "Wholesome blend of wheat, soya, chana, oat, maize, and psyllium husk.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "flour-rajdhani-maida",
+   "title": "Rajdhani Refined Wheat Flour (Maida)",
+   "category": "atta-flour",
+   "subcategory": "Maida",
+   "brand": "Rajdhani",
+   "variants": [
+    {
+     "unit": "500 g pack",
+     "price": 30,
+     "oldPrice": 38
+    },
+    {
+     "unit": "1 kg pack",
+     "price": 55,
+     "oldPrice": 70
+    }
+   ],
+   "rating": "4.7 (2.1k)",
+   "stock": 60,
+   "image": "",
+   "description": "Super-fine all-purpose flour for baking, naans, and samosas.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "flour-fortune-besan",
+   "title": "Fortune 100% Chana Dal Besan",
+   "category": "atta-flour",
+   "subcategory": "Besan",
+   "brand": "Fortune",
+   "variants": [
+    {
+     "unit": "500 g pouch",
+     "price": 55,
+     "oldPrice": 68
+    },
+    {
+     "unit": "1 kg pack",
+     "price": 105,
+     "oldPrice": 130
+    }
+   ],
+   "rating": "4.8 (4.4k)",
+   "stock": 80,
+   "image": "",
+   "description": "Fine chickpea gram flour prepared from unadulterated polished chana dal.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "flour-rajdhani-sooji",
+   "title": "Rajdhani Pure Granular Sooji (Rava)",
+   "category": "atta-flour",
+   "subcategory": "Suji & Rava",
+   "brand": "Rajdhani",
+   "variants": [
+    {
+     "unit": "500 g pack",
+     "price": 32,
+     "oldPrice": 40
+    },
+    {
+     "unit": "1 kg pack",
+     "price": 62,
+     "oldPrice": 78
+    }
+   ],
+   "rating": "4.7 (2.5k)",
+   "stock": 70,
+   "image": "",
+   "description": "Crispy semolina grains for instant rava upma, halwa, and batter.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "flour-rice-white",
+   "title": "BB Royal Fine White Rice Flour",
+   "category": "atta-flour",
+   "subcategory": "Rice Flour",
+   "brand": "BB Royal",
+   "variants": [
+    {
+     "unit": "500 g pouch",
+     "price": 38,
+     "oldPrice": 48
+    }
+   ],
+   "rating": "4.6 (1.1k)",
+   "stock": 45,
+   "image": "",
+   "description": "Silky ground rice flour for modaks, dosas, and crispy batters.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "flour-ragi-organic",
+   "title": "Organic Finger Millet Flour (Ragi)",
+   "category": "atta-flour",
+   "subcategory": "Other Flours",
+   "brand": "Natureland",
+   "variants": [
+    {
+     "unit": "500 g pack",
+     "price": 45,
+     "oldPrice": 60
+    }
+   ],
+   "rating": "4.8 (1.6k)",
+   "stock": 40,
+   "image": "",
+   "description": "Calcium-dense gluten-free flour for healthy porridge and rotis.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "rice-daawat-basmati",
+   "title": "Daawat Rozana Super Basmati Rice",
+   "category": "rice-grains",
+   "subcategory": "Basmati Rice",
+   "brand": "Daawat",
+   "variants": [
+    {
+     "unit": "1 kg pouch",
+     "price": 89,
+     "oldPrice": 110
+    },
+    {
+     "unit": "5 kg bag",
+     "price": 399,
+     "oldPrice": 480
+    }
+   ],
+   "rating": "4.8 (3.9k)",
+   "stock": 85,
+   "image": "",
+   "description": "Aromatic long grain basmati rice aged for non-sticky, fluffy daily meals.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "rice-kolam-steam",
+   "title": "Wada Kolam Daily Steam Rice",
+   "category": "rice-grains",
+   "subcategory": "Regular Rice",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "1 kg pack",
+     "price": 58,
+     "oldPrice": 70
+    },
+    {
+     "unit": "5 kg bag",
+     "price": 275,
+     "oldPrice": 340
+    }
+   ],
+   "rating": "4.7 (2.8k)",
+   "stock": 90,
+   "image": "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=500&auto=format&fit=crop&q=60",
+   "description": "Medium grain soft textured daily table rice preferred in Maharashtra.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "rice-brown-indiagate",
+   "title": "India Gate 100% Whole Brown Rice",
+   "category": "rice-grains",
+   "subcategory": "Brown Rice",
+   "brand": "India Gate",
+   "variants": [
+    {
+     "unit": "1 kg pack",
+     "price": 125,
+     "oldPrice": 155
+    }
+   ],
+   "rating": "4.8 (3.1k)",
+   "stock": 50,
+   "image": "",
+   "description": "Fiber-rich whole unpolished grains that support active weight control.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "rice-poha-tata",
+   "title": "Tata Sampann High Fiber Thick Poha",
+   "category": "rice-grains",
+   "subcategory": "Poha",
+   "brand": "Tata Sampann",
+   "variants": [
+    {
+     "unit": "500 g pack",
+     "price": 42,
+     "oldPrice": 52
+    },
+    {
+     "unit": "1 kg pack",
+     "price": 80,
+     "oldPrice": 99
+    }
+   ],
+   "rating": "4.9 (5.4k)",
+   "stock": 110,
+   "image": "",
+   "description": "Flattened beaten rice flakes with zero dust for morning breakfast poha.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "grain-wheat-dalia",
+   "title": "Patanjali Whole Wheat Dalia",
+   "category": "rice-grains",
+   "subcategory": "Dalia",
+   "brand": "Patanjali",
+   "variants": [
+    {
+     "unit": "500 g pack",
+     "price": 35,
+     "oldPrice": 45
+    }
+   ],
+   "rating": "4.7 (2.1k)",
+   "stock": 60,
+   "image": "",
+   "description": "Broken wheat grains packed with natural roughage and dietary fiber.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "grain-quinoa-white",
+   "title": "True Elements White Quinoa Grains",
+   "category": "rice-grains",
+   "subcategory": "Other Grains",
+   "brand": "True Elements",
+   "variants": [
+    {
+     "unit": "500 g jar",
+     "price": 199,
+     "oldPrice": 280
+    }
+   ],
+   "rating": "4.8 (1.4k)",
+   "stock": 35,
+   "image": "",
+   "description": "Gluten-free complete plant protein grain for nutrient-rich health bowls.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dal-toor-tata",
+   "title": "Tata Sampann Unpolished Toor Dal",
+   "category": "dal-pulses",
+   "subcategory": "Toor Dal",
+   "brand": "Tata Sampann",
+   "variants": [
+    {
+     "unit": "500 g pouch",
+     "price": 88,
+     "oldPrice": 99
+    },
+    {
+     "unit": "1 kg pack",
+     "price": 169,
+     "oldPrice": 195
+    }
+   ],
+   "rating": "4.8 (3.4k)",
+   "stock": 85,
+   "image": "",
+   "description": "Nutritious unpolished yellow arhar lentils cleaned without artificial water polish.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "dal-moong-yellow",
+   "title": "Tata Sampann Yellow Moong Dal",
+   "category": "dal-pulses",
+   "subcategory": "Moong Dal",
+   "brand": "Tata Sampann",
+   "variants": [
+    {
+     "unit": "500 g pouch",
+     "price": 75,
+     "oldPrice": 90
+    },
+    {
+     "unit": "1 kg pack",
+     "price": 145,
+     "oldPrice": 175
+    }
+   ],
+   "rating": "4.8 (2.5k)",
+   "stock": 75,
+   "image": "",
+   "description": "Quick-cooking easy-to-digest yellow split lentils for khichdi and soups.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "dal-masoor-red",
+   "title": "Fortune Red Masoor Split Dal",
+   "category": "dal-pulses",
+   "subcategory": "Masoor Dal",
+   "brand": "Fortune",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 58,
+     "oldPrice": 70
+    },
+    {
+     "unit": "1 kg",
+     "price": 110,
+     "oldPrice": 135
+    }
+   ],
+   "rating": "4.7 (1.9k)",
+   "stock": 60,
+   "image": "",
+   "description": "Unpolished red split lentils rich in dietary folate and bioavailable iron.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dal-chana-organic",
+   "title": "Organic Chana Dal (Bengal Gram)",
+   "category": "dal-pulses",
+   "subcategory": "Chana Dal",
+   "brand": "Organic Tattva",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 62,
+     "oldPrice": 75
+    }
+   ],
+   "rating": "4.7 (1.5k)",
+   "stock": 50,
+   "image": "",
+   "description": "Naturally sweet nutty split chickpeas grown using zero chemical pesticides.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dal-urad-white",
+   "title": "Tata Sampann White Urad Gota (Whole)",
+   "category": "dal-pulses",
+   "subcategory": "Urad Dal",
+   "brand": "Tata Sampann",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 82,
+     "oldPrice": 98
+    },
+    {
+     "unit": "1 kg",
+     "price": 158,
+     "oldPrice": 185
+    }
+   ],
+   "rating": "4.8 (2.4k)",
+   "stock": 70,
+   "image": "",
+   "description": "Whole skinless white urad lentils essential for authentic fluffy idli batter.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "dal-rajma-chitra",
+   "title": "Kashmiri Chitra Red Kidney Beans (Rajma)",
+   "category": "dal-pulses",
+   "subcategory": "Rajma",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 89,
+     "oldPrice": 115
+    },
+    {
+     "unit": "1 kg",
+     "price": 169,
+     "oldPrice": 220
+    }
+   ],
+   "rating": "4.9 (4.2k)",
+   "stock": 65,
+   "image": "",
+   "description": "Soft cooking speckled red kidney beans that melt tender in Sunday curries.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dal-kabuli-chana",
+   "title": "Large White Kabuli Chana (Chickpeas)",
+   "category": "dal-pulses",
+   "subcategory": "Chickpeas",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 78,
+     "oldPrice": 95
+    },
+    {
+     "unit": "1 kg",
+     "price": 148,
+     "oldPrice": 185
+    }
+   ],
+   "rating": "4.8 (3.1k)",
+   "stock": 60,
+   "image": "",
+   "description": "Large bold chickpeas ideal for spicy Amritsari chole and creamy hummus.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dal-green-moong-whole",
+   "title": "Unpolished Whole Green Moong",
+   "category": "dal-pulses",
+   "subcategory": "Other Pulses",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 68,
+     "oldPrice": 85
+    }
+   ],
+   "rating": "4.8 (1.9k)",
+   "stock": 45,
+   "image": "",
+   "description": "Whole green gram lentils that sprout with 100% vigor for diet salads.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "oil-gemini-sunflower",
+   "title": "Gemini Pure Sunflower Cooking Oil",
+   "category": "oil-ghee",
+   "subcategory": "Sunflower Oil",
+   "brand": "Gemini",
+   "variants": [
+    {
+     "unit": "1 Liter pouch",
+     "price": 135,
+     "oldPrice": 160
+    },
+    {
+     "unit": "5 Liters jar",
+     "price": 650,
+     "oldPrice": 780
+    }
+   ],
+   "rating": "4.8 (5.1k)",
+   "stock": 90,
+   "image": "",
+   "description": "Enriched with Nutri-Vitamins A, D and E for light healthy deep frying.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "oil-fortune-soya",
+   "title": "Fortune Soya Health Refined Soyabean Oil",
+   "category": "oil-ghee",
+   "subcategory": "Soybean Oil",
+   "brand": "Fortune",
+   "variants": [
+    {
+     "unit": "1 Liter pouch",
+     "price": 125,
+     "oldPrice": 150
+    }
+   ],
+   "rating": "4.7 (3.4k)",
+   "stock": 80,
+   "image": "",
+   "description": "Light odor-free refined cooking oil with natural polyunsaturated fats.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "oil-fortune-mustard",
+   "title": "Fortune Kachi Ghani Mustard Oil",
+   "category": "oil-ghee",
+   "subcategory": "Mustard Oil",
+   "brand": "Fortune",
+   "variants": [
+    {
+     "unit": "1 Liter bottle",
+     "price": 145,
+     "oldPrice": 175
+    },
+    {
+     "unit": "5 Liters jar",
+     "price": 699,
+     "oldPrice": 850
+    }
+   ],
+   "rating": "4.8 (4.7k)",
+   "stock": 95,
+   "image": "",
+   "description": "Cold-pressed authentic mustard oil with strong pungency and rich aroma.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "oil-groundnut-gulab",
+   "title": "Gulab Pure Filtered Groundnut Peanut Oil",
+   "category": "oil-ghee",
+   "subcategory": "Groundnut Oil",
+   "brand": "Gulab",
+   "variants": [
+    {
+     "unit": "1 Liter bottle",
+     "price": 185,
+     "oldPrice": 220
+    }
+   ],
+   "rating": "4.8 (2.3k)",
+   "stock": 40,
+   "image": "",
+   "description": "Traditional aromatic peanut oil that brings authentic taste to snacks.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "oil-ricebran-vivo",
+   "title": "Fortune Vivo Physically Refined Rice Bran Oil",
+   "category": "oil-ghee",
+   "subcategory": "Rice Bran Oil",
+   "brand": "Fortune",
+   "variants": [
+    {
+     "unit": "1 Liter pouch",
+     "price": 140,
+     "oldPrice": 165
+    }
+   ],
+   "rating": "4.7 (2.1k)",
+   "stock": 50,
+   "image": "",
+   "description": "Rich in natural Oryzanol that supports healthy cholesterol balance.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "oil-borges-olive",
+   "title": "Borges Extra Virgin Olive Oil",
+   "category": "oil-ghee",
+   "subcategory": "Olive Oil",
+   "brand": "Borges",
+   "variants": [
+    {
+     "unit": "250 ml bottle",
+     "price": 295,
+     "oldPrice": 380
+    },
+    {
+     "unit": "500 ml bottle",
+     "price": 549,
+     "oldPrice": 699
+    }
+   ],
+   "rating": "4.9 (3.6k)",
+   "stock": 30,
+   "image": "",
+   "description": "First cold-extracted Mediterranean olive oil for salads, dressings, and pastas.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "ghee-amul-cow",
+   "title": "Amul Pure Cow Desi Ghee",
+   "category": "oil-ghee",
+   "subcategory": "Ghee",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "500 ml carton",
+     "price": 310,
+     "oldPrice": 340
+    },
+    {
+     "unit": "1 Liter tin",
+     "price": 615,
+     "oldPrice": 670
+    }
+   ],
+   "rating": "4.9 (6.8k)",
+   "stock": 85,
+   "image": "https://images.unsplash.com/photo-1608797178974-15b35a6538b7?w=500&auto=format&fit=crop&q=60",
+   "description": "Traditional golden cow ghee with authentic granular texture and pure aroma.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "spice-jeera-whole",
+   "title": "Tata Sampann Whole Cumin Seeds (Jeera)",
+   "category": "spices-masala",
+   "subcategory": "Whole Spices",
+   "brand": "Tata Sampann",
+   "variants": [
+    {
+     "unit": "100 g pouch",
+     "price": 65,
+     "oldPrice": 80
+    }
+   ],
+   "rating": "4.9 (4.8k)",
+   "stock": 90,
+   "image": "",
+   "description": "Cleaned aromatic whole cumin seeds packed with natural essential oils.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "spice-turmeric-powder",
+   "title": "Everest Pure Turmeric Powder (Haldi)",
+   "category": "spices-masala",
+   "subcategory": "Powder Spices",
+   "brand": "Everest",
+   "variants": [
+    {
+     "unit": "200 g box",
+     "price": 48,
+     "oldPrice": 58
+    },
+    {
+     "unit": "500 g box",
+     "price": 110,
+     "oldPrice": 135
+    }
+   ],
+   "rating": "4.9 (6.7k)",
+   "stock": 110,
+   "image": "",
+   "description": "Rich natural yellow color turmeric ground from high-curcumin rhizomes.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "spice-mdh-garam",
+   "title": "MDH Shahi Garam Masala Blend",
+   "category": "spices-masala",
+   "subcategory": "Garam Masala",
+   "brand": "MDH",
+   "variants": [
+    {
+     "unit": "100 g carton",
+     "price": 85,
+     "oldPrice": 95
+    }
+   ],
+   "rating": "4.8 (5.6k)",
+   "stock": 75,
+   "image": "",
+   "description": "Traditional spice bouquet of roasted cardamom, cloves, cinnamon, and pepper.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "spice-catch-chaat",
+   "title": "Catch Chatpata Chaat Masala Sprinkler",
+   "category": "spices-masala",
+   "subcategory": "Chaat Masala",
+   "brand": "Catch",
+   "variants": [
+    {
+     "unit": "100 g can",
+     "price": 68,
+     "oldPrice": 75
+    }
+   ],
+   "rating": "4.8 (3.6k)",
+   "stock": 60,
+   "image": "",
+   "description": "Table-ready sprinkler that gives instant zing to fruit chaat and raitas.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "spice-kitchen-king",
+   "title": "Everest Kitchen King All-in-One Masala",
+   "category": "spices-masala",
+   "subcategory": "Kitchen Masala",
+   "brand": "Everest",
+   "variants": [
+    {
+     "unit": "100 g pack",
+     "price": 78,
+     "oldPrice": 88
+    }
+   ],
+   "rating": "4.9 (4.9k)",
+   "stock": 70,
+   "image": "",
+   "description": "Versatile masala mix suitable for all North Indian paneer and vegetable dishes.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "spice-tata-salt",
+   "title": "Tata Salt Vacuum Evaporated Iodized Salt",
+   "category": "spices-masala",
+   "subcategory": "Salt",
+   "brand": "Tata Salt",
+   "variants": [
+    {
+     "unit": "1 kg pack",
+     "price": 28,
+     "oldPrice": 28
+    }
+   ],
+   "rating": "4.9 (15.2k)",
+   "stock": 300,
+   "image": "",
+   "description": "Desh Ka Namak - pure vacuum evaporated solar salt enriched with iodine.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "sugar-madhur-crystal",
+   "title": "Madhur Sulphur-Free Pure Sugar",
+   "category": "sugar-sweeteners",
+   "subcategory": "Sugar",
+   "brand": "Madhur",
+   "variants": [
+    {
+     "unit": "1 kg pack",
+     "price": 54,
+     "oldPrice": 62
+    },
+    {
+     "unit": "5 kg bag",
+     "price": 260,
+     "oldPrice": 300
+    }
+   ],
+   "rating": "4.8 (5.9k)",
+   "stock": 120,
+   "image": "",
+   "description": "Sparkling clean white sugar crystals refined without harmful sulphur fumes.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "sugar-jaggery-gud",
+   "title": "Organic Tattva Natural Cane Jaggery (Gud)",
+   "category": "sugar-sweeteners",
+   "subcategory": "Jaggery",
+   "brand": "Organic Tattva",
+   "variants": [
+    {
+     "unit": "500 g tub",
+     "price": 65,
+     "oldPrice": 80
+    }
+   ],
+   "rating": "4.8 (2.9k)",
+   "stock": 50,
+   "image": "",
+   "description": "Unbleached natural iron-rich solid cane jaggery blocks without added soda.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "sugar-dabur-honey",
+   "title": "Dabur 100% Pure Squeezy Honey",
+   "category": "sugar-sweeteners",
+   "subcategory": "Honey",
+   "brand": "Dabur",
+   "variants": [
+    {
+     "unit": "225 g bottle",
+     "price": 99,
+     "oldPrice": 125
+    },
+    {
+     "unit": "500 g bottle",
+     "price": 199,
+     "oldPrice": 250
+    }
+   ],
+   "rating": "4.9 (6.8k)",
+   "stock": 85,
+   "image": "",
+   "description": "Pure natural wildflower honey tested for zero adulteration or sugar syrup.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "sugar-free-gold-dispenser",
+   "title": "Sugar Free Gold Sweetener Dispenser",
+   "category": "sugar-sweeteners",
+   "subcategory": "Sugar Free",
+   "brand": "Sugar Free",
+   "variants": [
+    {
+     "unit": "100 pellets dispenser",
+     "price": 70,
+     "oldPrice": 75
+    }
+   ],
+   "rating": "4.7 (2.5k)",
+   "stock": 45,
+   "image": "",
+   "description": "Zero calorie tabletop pellets safe for diabetic morning tea and coffee.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "sauce-kissan-ketchup",
+   "title": "Kissan Fresh Tomato Ketchup Bottle",
+   "category": "sauces-spreads",
+   "subcategory": "Tomato Ketchup",
+   "brand": "Kissan",
+   "variants": [
+    {
+     "unit": "500 g bottle",
+     "price": 110,
+     "oldPrice": 130
+    },
+    {
+     "unit": "950 g pouch",
+     "price": 145,
+     "oldPrice": 180
+    }
+   ],
+   "rating": "4.8 (5.5k)",
+   "stock": 90,
+   "image": "",
+   "description": "Thick sweet and tangy sauce made from 100% real ripe sun-blessed tomatoes.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "sauce-veeba-mayo",
+   "title": "Veeba Truly Eggless Mayonnaise",
+   "category": "sauces-spreads",
+   "subcategory": "Mayonnaise",
+   "brand": "Veeba",
+   "variants": [
+    {
+     "unit": "250 g bottle",
+     "price": 68,
+     "oldPrice": 85
+    }
+   ],
+   "rating": "4.8 (3.6k)",
+   "stock": 65,
+   "image": "",
+   "description": "Thick creamy eggless mayo spread for sandwiches, burgers, and wraps.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "sauce-pudina-chutney",
+   "title": "Mother's Recipe Spicy Pudina Chutney",
+   "category": "sauces-spreads",
+   "subcategory": "Chutney",
+   "brand": "Mother's Recipe",
+   "variants": [
+    {
+     "unit": "200 g bottle",
+     "price": 60,
+     "oldPrice": 70
+    }
+   ],
+   "rating": "4.7 (1.7k)",
+   "stock": 40,
+   "image": "",
+   "description": "Tangy mint and fresh green coriander dip ready for samosas and pakoras.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "sauce-barilla-pasta",
+   "title": "Barilla Arbiata Tomato Pasta Sauce",
+   "category": "sauces-spreads",
+   "subcategory": "Pasta Sauce",
+   "brand": "Barilla",
+   "variants": [
+    {
+     "unit": "400 g jar",
+     "price": 245,
+     "oldPrice": 295
+    }
+   ],
+   "rating": "4.8 (1.5k)",
+   "stock": 30,
+   "image": "",
+   "description": "Italian tomato sauce simmered with chili peppers, garlic, and fresh basil.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "sauce-chings-schezwan",
+   "title": "Ching's Secret Schezwan Chutney Dip",
+   "category": "sauces-spreads",
+   "subcategory": "Schezwan Sauce",
+   "brand": "Ching's",
+   "variants": [
+    {
+     "unit": "250 g bottle",
+     "price": 85,
+     "oldPrice": 95
+    }
+   ],
+   "rating": "4.9 (7.2k)",
+   "stock": 85,
+   "image": "",
+   "description": "Fiery spicy chutney loaded with ginger, garlic, and Sichuan red peppers.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "sauce-kissan-jam",
+   "title": "Kissan Mixed Fruit Sweet Jam",
+   "category": "sauces-spreads",
+   "subcategory": "Jam",
+   "brand": "Kissan",
+   "variants": [
+    {
+     "unit": "200 g jar",
+     "price": 75,
+     "oldPrice": 85
+    },
+    {
+     "unit": "500 g jar",
+     "price": 165,
+     "oldPrice": 190
+    }
+   ],
+   "rating": "4.8 (4.7k)",
+   "stock": 75,
+   "image": "",
+   "description": "Sweet fruit pulp preserve made from 8 seasonal fruits that pairs with bread.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "spread-pintola-peanut",
+   "title": "Pintola All Natural Crunchy Peanut Butter",
+   "category": "sauces-spreads",
+   "subcategory": "Peanut Butter",
+   "brand": "Pintola",
+   "variants": [
+    {
+     "unit": "350 g jar",
+     "price": 165,
+     "oldPrice": 199
+    },
+    {
+     "unit": "1 kg tub",
+     "price": 399,
+     "oldPrice": 499
+    }
+   ],
+   "rating": "4.9 (5.8k)",
+   "stock": 55,
+   "image": "",
+   "description": "100% roasted peanuts without added sugar, salt, or hydrogenated palm oil.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "spread-nutella-hazelnut",
+   "title": "Nutella Hazelnut Cocoa Spread",
+   "category": "sauces-spreads",
+   "subcategory": "Chocolate Spread",
+   "brand": "Ferrero",
+   "variants": [
+    {
+     "unit": "350 g jar",
+     "price": 340,
+     "oldPrice": 390
+    }
+   ],
+   "rating": "4.9 (8.3k)",
+   "stock": 65,
+   "image": "",
+   "description": "Rich Italian creamy chocolate spread made with real roasted hazelnuts and skim milk.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "instant-maggi-masala",
+   "title": "Nestle Maggi 2-Minute Masala Noodles",
+   "category": "instant-packaged",
+   "subcategory": "Instant Noodles",
+   "brand": "Nestle",
+   "variants": [
+    {
+     "unit": "Pack of 4 (280g)",
+     "price": 56,
+     "oldPrice": 56
+    },
+    {
+     "unit": "Pack of 12 (840g)",
+     "price": 160,
+     "oldPrice": 168
+    }
+   ],
+   "rating": "4.9 (14.8k)",
+   "stock": 160,
+   "image": "",
+   "description": "India's favorite instant noodles infused with iconic roasted aromatic spices.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "instant-yippee-noodles",
+   "title": "Sunfeast YiPPee! Magic Masala Noodles",
+   "category": "instant-packaged",
+   "subcategory": "Instant Noodles",
+   "brand": "Sunfeast",
+   "variants": [
+    {
+     "unit": "Pack of 4 (260g)",
+     "price": 52,
+     "oldPrice": 56
+    }
+   ],
+   "rating": "4.7 (3.9k)",
+   "stock": 60,
+   "image": "",
+   "description": "Non-sticky round noodle block packed with real vegetable granules.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "instant-barilla-penne",
+   "title": "Barilla 100% Durum Wheat Penne Rigate",
+   "category": "instant-packaged",
+   "subcategory": "Pasta",
+   "brand": "Barilla",
+   "variants": [
+    {
+     "unit": "500 g box",
+     "price": 199,
+     "oldPrice": 250
+    }
+   ],
+   "rating": "4.8 (2.9k)",
+   "stock": 45,
+   "image": "",
+   "description": "Authentic al dente Italian pasta made from 100% semolina durum wheat.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "instant-knorr-soup",
+   "title": "Knorr Classic Thick Tomato Soup Mix",
+   "category": "instant-packaged",
+   "subcategory": "Soup",
+   "brand": "Knorr",
+   "variants": [
+    {
+     "unit": "53 g pouch (4 servings)",
+     "price": 55,
+     "oldPrice": 60
+    }
+   ],
+   "rating": "4.7 (2.8k)",
+   "stock": 55,
+   "image": "",
+   "description": "Restaurant style thick sweet and tangy tomato soup ready in 3 minutes.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "instant-mtr-dalmakhani",
+   "title": "MTR Ready-to-Eat Dal Makhani",
+   "category": "instant-packaged",
+   "subcategory": "Ready-to-Eat Meals",
+   "brand": "MTR",
+   "variants": [
+    {
+     "unit": "300 g pack",
+     "price": 110,
+     "oldPrice": 130
+    }
+   ],
+   "rating": "4.8 (2.2k)",
+   "stock": 35,
+   "image": "",
+   "description": "Slow-cooked black lentils simmered with butter and fresh cream, ready to heat.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "instant-gits-jamun",
+   "title": "Gits Instant Gulab Jamun Dessert Mix",
+   "category": "instant-packaged",
+   "subcategory": "Ready-to-Cook Meals",
+   "brand": "Gits",
+   "variants": [
+    {
+     "unit": "200 g pack (yields 40 jamuns)",
+     "price": 115,
+     "oldPrice": 140
+    }
+   ],
+   "rating": "4.8 (3.9k)",
+   "stock": 50,
+   "image": "",
+   "description": "Traditional recipe instant premix for soft and spongy festive gulab jamuns.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "instant-delmonte-corn",
+   "title": "Del Monte Whole Kernel Sweet Corn Can",
+   "category": "instant-packaged",
+   "subcategory": "Canned Food",
+   "brand": "Del Monte",
+   "variants": [
+    {
+     "unit": "410 g can",
+     "price": 115,
+     "oldPrice": 130
+    }
+   ],
+   "rating": "4.7 (1.9k)",
+   "stock": 40,
+   "image": "",
+   "description": "Plump juicy tender corn kernels packed in sea salt water without preservatives.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "frozen-safal-peas",
+   "title": "Safal Frozen Fresh Green Peas (Matar)",
+   "category": "frozen-food",
+   "subcategory": "Frozen Vegetables",
+   "brand": "Safal",
+   "variants": [
+    {
+     "unit": "500 g pouch",
+     "price": 75,
+     "oldPrice": 90
+    },
+    {
+     "unit": "1 kg bag",
+     "price": 140,
+     "oldPrice": 175
+    }
+   ],
+   "rating": "4.8 (4.9k)",
+   "stock": 85,
+   "image": "",
+   "description": "Naturally sweet green peas individually quick frozen (IQF) to lock nutrients.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "frozen-mccain-fries",
+   "title": "McCain Crispy Classic French Fries",
+   "category": "frozen-food",
+   "subcategory": "French Fries",
+   "brand": "McCain",
+   "variants": [
+    {
+     "unit": "420 g pack",
+     "price": 110,
+     "oldPrice": 130
+    },
+    {
+     "unit": "750 g pack",
+     "price": 185,
+     "oldPrice": 220
+    }
+   ],
+   "rating": "4.9 (6.8k)",
+   "stock": 75,
+   "image": "",
+   "description": "Golden crispy potato strips ready for quick air-frying or deep frying.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "frozen-mccain-nuggets",
+   "title": "McCain Crispy Veggie Nuggets",
+   "category": "frozen-food",
+   "subcategory": "Nuggets",
+   "brand": "McCain",
+   "variants": [
+    {
+     "unit": "320 g pack",
+     "price": 120,
+     "oldPrice": 145
+    }
+   ],
+   "rating": "4.8 (2.9k)",
+   "stock": 50,
+   "image": "",
+   "description": "Crunchy batter coated potato, pea, and corn bite-sized party appetizers.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "frozen-prasuma-momos",
+   "title": "Prasuma Original Chicken Momos",
+   "category": "frozen-food",
+   "subcategory": "Momos",
+   "brand": "Prasuma",
+   "variants": [
+    {
+     "unit": "10 pcs pack (240g)",
+     "price": 175,
+     "oldPrice": 215
+    }
+   ],
+   "rating": "4.9 (4.2k)",
+   "stock": 45,
+   "image": "",
+   "description": "Thin-wrapper juicy Himalayan dumplings ready in 3 minutes.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "frozen-haldiram-paratha",
+   "title": "Haldiram's Frozen Aloo Paratha",
+   "category": "frozen-food",
+   "subcategory": "Frozen Paratha",
+   "brand": "Haldiram's",
+   "variants": [
+    {
+     "unit": "4 pcs pack (400g)",
+     "price": 125,
+     "oldPrice": 150
+    }
+   ],
+   "rating": "4.7 (2.1k)",
+   "stock": 40,
+   "image": "",
+   "description": "Stuffed homestyle spiced potato flatbreads, ready to heat with butter on tawa.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "frozen-yummiez-sausage",
+   "title": "Godrej Yummiez Breakfast Chicken Sausages",
+   "category": "frozen-food",
+   "subcategory": "Frozen Meat",
+   "brand": "Godrej Yummiez",
+   "variants": [
+    {
+     "unit": "250 g pack",
+     "price": 155,
+     "oldPrice": 185
+    }
+   ],
+   "rating": "4.8 (2.4k)",
+   "stock": 35,
+   "image": "",
+   "description": "Mildly spiced cured chicken links for wholesome continental morning breakfasts.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "bake-britannia-white",
+   "title": "Britannia Daily Fresh White Bread",
+   "category": "bakery",
+   "subcategory": "Bread",
+   "brand": "Britannia",
+   "variants": [
+    {
+     "unit": "400 g loaf",
+     "price": 35,
+     "oldPrice": 40
+    }
+   ],
+   "rating": "4.8 (7.8k)",
+   "stock": 95,
+   "image": "",
+   "description": "Soft sliced sandwich bread enriched with essential calcium and vitamins.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "bake-modern-brown",
+   "title": "Modern 100% Whole Wheat Brown Bread",
+   "category": "bakery",
+   "subcategory": "Brown Bread",
+   "brand": "Modern",
+   "variants": [
+    {
+     "unit": "400 g loaf",
+     "price": 45,
+     "oldPrice": 50
+    }
+   ],
+   "rating": "4.8 (4.9k)",
+   "stock": 65,
+   "image": "",
+   "description": "Fiber-rich whole wheat bread baked fresh daily for healthy morning toasts.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "bake-laadi-pav",
+   "title": "Mumbai Fresh Laadi Pav Bun",
+   "category": "bakery",
+   "subcategory": "Pav & Bun",
+   "brand": "Local Bakery",
+   "variants": [
+    {
+     "unit": "6 pcs pack",
+     "price": 20,
+     "oldPrice": 25
+    }
+   ],
+   "rating": "4.9 (6.7k)",
+   "stock": 120,
+   "image": "",
+   "description": "Pillowy soft pull-apart bakery buns essential for vada pav and bhaji.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "bake-britannia-fruitcake",
+   "title": "Britannia Nut & Fruit Slice Cake",
+   "category": "bakery",
+   "subcategory": "Cakes",
+   "brand": "Britannia",
+   "variants": [
+    {
+     "unit": "120 g pack",
+     "price": 30,
+     "oldPrice": 35
+    }
+   ],
+   "rating": "4.8 (3.9k)",
+   "stock": 60,
+   "image": "",
+   "description": "Soft tea-time sponge cake studded with candied fruit bits and orange peel.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "bake-parle-rusk",
+   "title": "Parle Premium Elaichi Toast Rusk",
+   "category": "bakery",
+   "subcategory": "Rusk",
+   "brand": "Parle",
+   "variants": [
+    {
+     "unit": "200 g pack",
+     "price": 35,
+     "oldPrice": 40
+    },
+    {
+     "unit": "400 g pack",
+     "price": 65,
+     "oldPrice": 75
+    }
+   ],
+   "rating": "4.8 (5.1k)",
+   "stock": 80,
+   "image": "",
+   "description": "Crispy twice-baked toast biscuits infused with natural green cardamom seeds.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "bake-butter-croissant",
+   "title": "Artisanal French Butter Croissant",
+   "category": "bakery",
+   "subcategory": "Croissants",
+   "brand": "The Baker's Dozen",
+   "variants": [
+    {
+     "unit": "2 pcs pack",
+     "price": 120,
+     "oldPrice": 150
+    }
+   ],
+   "rating": "4.8 (1.2k)",
+   "stock": 30,
+   "image": "",
+   "description": "Flaky golden layered pastry baked with 100% pure butter.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dry-happilo-almonds",
+   "title": "Happilo 100% California Almonds (Badam)",
+   "category": "dry-fruits",
+   "subcategory": "Almonds",
+   "brand": "Happilo",
+   "variants": [
+    {
+     "unit": "200 g pouch",
+     "price": 185,
+     "oldPrice": 250
+    },
+    {
+     "unit": "500 g pouch",
+     "price": 420,
+     "oldPrice": 599
+    }
+   ],
+   "rating": "4.9 (6.1k)",
+   "stock": 70,
+   "image": "",
+   "description": "Crisp raw unpolished non-GMO California almonds packed with Vitamin E.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dry-happilo-cashews",
+   "title": "Happilo Whole Cashew Nuts (Kaju W320)",
+   "category": "dry-fruits",
+   "subcategory": "Cashews",
+   "brand": "Happilo",
+   "variants": [
+    {
+     "unit": "200 g pouch",
+     "price": 210,
+     "oldPrice": 280
+    },
+    {
+     "unit": "500 g pouch",
+     "price": 499,
+     "oldPrice": 650
+    }
+   ],
+   "rating": "4.8 (4.8k)",
+   "stock": 65,
+   "image": "",
+   "description": "Jumbo sized whole white sweet cashews ideal for snacking and desserts.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dry-green-raisins",
+   "title": "Organic Indian Green Raisins (Kishmish)",
+   "category": "dry-fruits",
+   "subcategory": "Raisins",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "250 g pouch",
+     "price": 85,
+     "oldPrice": 120
+    }
+   ],
+   "rating": "4.7 (2.4k)",
+   "stock": 60,
+   "image": "",
+   "description": "Sun-dried sweet seedless golden green raisins packed with natural sugars.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dry-kashmir-walnuts",
+   "title": "Happilo Kashmiri Walnut Kernels (Akhrot)",
+   "category": "dry-fruits",
+   "subcategory": "Walnuts",
+   "brand": "Happilo",
+   "variants": [
+    {
+     "unit": "200 g pouch",
+     "price": 245,
+     "oldPrice": 350
+    }
+   ],
+   "rating": "4.8 (2.9k)",
+   "stock": 45,
+   "image": "",
+   "description": "Omega-3 rich vacuum-packed light halved walnut halves for brain wellness.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dry-salted-pistachios",
+   "title": "Nutraj Roasted & Salted Pistachios (Pista)",
+   "category": "dry-fruits",
+   "subcategory": "Pistachios",
+   "brand": "Nutraj",
+   "variants": [
+    {
+     "unit": "200 g pouch",
+     "price": 260,
+     "oldPrice": 340
+    }
+   ],
+   "rating": "4.8 (2.1k)",
+   "stock": 40,
+   "image": "",
+   "description": "In-shell roasted crispy Iranian green pistachios dusted with sea salt.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "dry-kimia-dates",
+   "title": "Royal Arabian Soft Kimia Dates (Khajur)",
+   "category": "dry-fruits",
+   "subcategory": "Dates",
+   "brand": "Falcon",
+   "variants": [
+    {
+     "unit": "500 g box",
+     "price": 195,
+     "oldPrice": 260
+    }
+   ],
+   "rating": "4.9 (5.4k)",
+   "stock": 75,
+   "image": "",
+   "description": "Sweet melt-in-mouth black soft juicy dates filled with natural iron.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "care-dettol-soap",
+   "title": "Dettol Original Germ Protection Bathing Soap",
+   "category": "personal-care",
+   "subcategory": "Bath & Body",
+   "brand": "Dettol",
+   "variants": [
+    {
+     "unit": "Pack of 4 (125g each)",
+     "price": 185,
+     "oldPrice": 210
+    }
+   ],
+   "rating": "4.9 (9.7k)",
+   "stock": 130,
+   "image": "",
+   "description": "Trusted antiseptic antibacterial bathing bar for daily family hygiene.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "care-dove-shampoo",
+   "title": "Dove Daily Shine Shampoo",
+   "category": "personal-care",
+   "subcategory": "Shampoo & Conditioner",
+   "brand": "Dove",
+   "variants": [
+    {
+     "unit": "340 ml bottle",
+     "price": 245,
+     "oldPrice": 310
+    },
+    {
+     "unit": "650 ml pump bottle",
+     "price": 475,
+     "oldPrice": 599
+    }
+   ],
+   "rating": "4.8 (6.9k)",
+   "stock": 65,
+   "image": "",
+   "description": "Nutritive serum formula that protects hair strands from daily pollution.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "care-nivea-soft",
+   "title": "Nivea Soft Light Moisturizing Cream",
+   "category": "personal-care",
+   "subcategory": "Skin Care",
+   "brand": "Nivea",
+   "variants": [
+    {
+     "unit": "100 ml tub",
+     "price": 165,
+     "oldPrice": 199
+    },
+    {
+     "unit": "200 ml tub",
+     "price": 295,
+     "oldPrice": 375
+    }
+   ],
+   "rating": "4.9 (8.1k)",
+   "stock": 70,
+   "image": "",
+   "description": "Quick absorbing non-greasy cream infused with Vitamin E and Jojoba oil.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "care-colgate-maxfresh",
+   "title": "Colgate MaxFresh Spicy Red Gel Toothpaste",
+   "category": "personal-care",
+   "subcategory": "Oral Care",
+   "brand": "Colgate",
+   "variants": [
+    {
+     "unit": "150 g tube",
+     "price": 95,
+     "oldPrice": 115
+    },
+    {
+     "unit": "300 g twin saver",
+     "price": 185,
+     "oldPrice": 230
+    }
+   ],
+   "rating": "4.8 (8.4k)",
+   "stock": 120,
+   "image": "",
+   "description": "Cooling crystals that deliver long-lasting fresh spicy breath.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "care-fogg-scent",
+   "title": "Fogg Scent Xtremo No Gas Men Deodorant",
+   "category": "personal-care",
+   "subcategory": "Deodorants",
+   "brand": "Fogg",
+   "variants": [
+    {
+     "unit": "120 ml can",
+     "price": 199,
+     "oldPrice": 250
+    }
+   ],
+   "rating": "4.7 (4.9k)",
+   "stock": 55,
+   "image": "",
+   "description": "Long lasting 1,000 sprays concentrated perfume body spray without gas.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "care-gillette-mach3",
+   "title": "Gillette Mach 3 Turbo Men Razor",
+   "category": "personal-care",
+   "subcategory": "Shaving & Grooming",
+   "brand": "Gillette",
+   "variants": [
+    {
+     "unit": "1 razor + 1 cartridge",
+     "price": 260,
+     "oldPrice": 310
+    }
+   ],
+   "rating": "4.9 (5.8k)",
+   "stock": 45,
+   "image": "",
+   "description": "3-blade technology with lubrication strip for smooth zero-redness shave.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "clean-surf-excel",
+   "title": "Surf Excel Easy Wash Detergent Powder",
+   "category": "cleaning-household",
+   "subcategory": "Laundry",
+   "brand": "Surf Excel",
+   "variants": [
+    {
+     "unit": "1 kg pack",
+     "price": 140,
+     "oldPrice": 155
+    },
+    {
+     "unit": "5 kg bag",
+     "price": 649,
+     "oldPrice": 750
+    }
+   ],
+   "rating": "4.9 (9.8k)",
+   "stock": 120,
+   "image": "",
+   "description": "Power of 10 hands that dissolves fast and removes tough stains.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "clean-vim-gel",
+   "title": "Vim Lemon Power Dishwash Liquid Gel",
+   "category": "cleaning-household",
+   "subcategory": "Dishwashing",
+   "brand": "Vim",
+   "variants": [
+    {
+     "unit": "250 ml bottle",
+     "price": 60,
+     "oldPrice": 65
+    },
+    {
+     "unit": "750 ml refill pouch",
+     "price": 145,
+     "oldPrice": 180
+    }
+   ],
+   "rating": "4.9 (11.2k)",
+   "stock": 140,
+   "image": "",
+   "description": "One spoon cuts through tough oil and grease on a full sink of utensils.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "clean-lizol-floor",
+   "title": "Lizol Citrus Disinfectant Surface Cleaner",
+   "category": "cleaning-household",
+   "subcategory": "Floor Cleaning",
+   "brand": "Lizol",
+   "variants": [
+    {
+     "unit": "500 ml bottle",
+     "price": 110,
+     "oldPrice": 125
+    },
+    {
+     "unit": "2 Liters can",
+     "price": 380,
+     "oldPrice": 450
+    }
+   ],
+   "rating": "4.8 (7.9k)",
+   "stock": 90,
+   "image": "",
+   "description": "Kills 99.9% germs and leaves 10x better surface shine and citrus scent.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "clean-harpic-power",
+   "title": "Harpic Power Plus Toilet Cleaner Liquid",
+   "category": "cleaning-household",
+   "subcategory": "Toilet Cleaning",
+   "brand": "Harpic",
+   "variants": [
+    {
+     "unit": "500 ml bottle",
+     "price": 99,
+     "oldPrice": 110
+    },
+    {
+     "unit": "1 Liter bottle",
+     "price": 195,
+     "oldPrice": 220
+    }
+   ],
+   "rating": "4.9 (8.7k)",
+   "stock": 100,
+   "image": "",
+   "description": "Thick formula dissolves yellow limescale and stains in 20 minutes.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "clean-colin-spray",
+   "title": "Colin Glass & Surface Cleaner Spray",
+   "category": "cleaning-household",
+   "subcategory": "Kitchen Cleaning",
+   "brand": "Colin",
+   "variants": [
+    {
+     "unit": "500 ml trigger spray",
+     "price": 105,
+     "oldPrice": 120
+    }
+   ],
+   "rating": "4.8 (4.6k)",
+   "stock": 65,
+   "image": "",
+   "description": "Streak-free shine formula for kitchen slabs, mirrors, and glass tables.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "clean-shalimar-bags",
+   "title": "Shalimar Biodegradable Garbage Bags",
+   "category": "cleaning-household",
+   "subcategory": "Garbage Bags",
+   "brand": "Shalimar",
+   "variants": [
+    {
+     "unit": "Medium (30 bags roll)",
+     "price": 85,
+     "oldPrice": 110
+    }
+   ],
+   "rating": "4.7 (3.9k)",
+   "stock": 75,
+   "image": "",
+   "description": "Leak-proof tie-string dustbin bags for clean and hygienic waste disposal.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "clean-godrej-aer",
+   "title": "Godrej aer Pocket Bathroom Air Fragrance",
+   "category": "cleaning-household",
+   "subcategory": "Air Fresheners",
+   "brand": "Godrej aer",
+   "variants": [
+    {
+     "unit": "10 g sachet",
+     "price": 60,
+     "oldPrice": 65
+    }
+   ],
+   "rating": "4.7 (5.8k)",
+   "stock": 80,
+   "image": "",
+   "description": "Slim gel pocket that diffuses fresh fragrance continuously for 30 days.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "paper-origami-tissues",
+   "title": "Origami 2-Ply Soft Facial Tissue Box",
+   "category": "paper-disposable",
+   "subcategory": "Tissues",
+   "brand": "Origami",
+   "variants": [
+    {
+     "unit": "100 pulls box",
+     "price": 75,
+     "oldPrice": 90
+    }
+   ],
+   "rating": "4.8 (3.4k)",
+   "stock": 70,
+   "image": "",
+   "description": "Soft absorbent virgin paper tissues gentle on sensitive face skin.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "paper-toilet-rolls",
+   "title": "Origami 3-Ply Soft Toilet Paper Rolls",
+   "category": "paper-disposable",
+   "subcategory": "Toilet Paper",
+   "brand": "Origami",
+   "variants": [
+    {
+     "unit": "Pack of 4 rolls",
+     "price": 125,
+     "oldPrice": 160
+    }
+   ],
+   "rating": "4.7 (2.6k)",
+   "stock": 50,
+   "image": "",
+   "description": "Clog-free flushable soft toilet rolls crafted from 100% natural pulp.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "paper-kitchen-towel",
+   "title": "Origami Absorbent Kitchen Paper Towel",
+   "category": "paper-disposable",
+   "subcategory": "Paper Towels",
+   "brand": "Origami",
+   "variants": [
+    {
+     "unit": "Twin Roll Pack",
+     "price": 110,
+     "oldPrice": 140
+    }
+   ],
+   "rating": "4.8 (4.1k)",
+   "stock": 65,
+   "image": "",
+   "description": "Food contact safe rolls to wipe oil and kitchen spills without tearing.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "paper-foil-hindalco",
+   "title": "Hindalco Freshwrapp Kitchen Aluminium Foil",
+   "category": "paper-disposable",
+   "subcategory": "Aluminium Foil",
+   "brand": "Freshwrapp",
+   "variants": [
+    {
+     "unit": "18 meters roll (11 micron)",
+     "price": 145,
+     "oldPrice": 175
+    }
+   ],
+   "rating": "4.9 (5.9k)",
+   "stock": 80,
+   "image": "",
+   "description": "Keeps rotis, wraps, and tiffins warm, moist, and protected from germs.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "paper-cling-film",
+   "title": "Glad Food Grade Cling Wrap Film",
+   "category": "paper-disposable",
+   "subcategory": "Cling Wrap",
+   "brand": "Glad",
+   "variants": [
+    {
+     "unit": "30 meters roll",
+     "price": 135,
+     "oldPrice": 160
+    }
+   ],
+   "rating": "4.7 (1.9k)",
+   "stock": 40,
+   "image": "",
+   "description": "Stretchable transparent food wrap that preserves refrigerator freshness.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "baby-pampers-pants",
+   "title": "Pampers All Round Protection Diaper Pants",
+   "category": "baby-care",
+   "subcategory": "Diapers",
+   "brand": "Pampers",
+   "variants": [
+    {
+     "unit": "Medium (M) - 34 pcs",
+     "price": 449,
+     "oldPrice": 599
+    },
+    {
+     "unit": "Large (L) - 32 pcs",
+     "price": 469,
+     "oldPrice": 620
+    }
+   ],
+   "rating": "4.9 (11.4k)",
+   "stock": 90,
+   "image": "",
+   "description": "Anti-rash lotion with magic gel core for 12-hour leakproof night sleep.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "baby-cerelac-wheat",
+   "title": "Nestle Cerelac Wheat Apple Baby Cereal",
+   "category": "baby-care",
+   "subcategory": "Baby Food",
+   "brand": "Nestle",
+   "variants": [
+    {
+     "unit": "300 g box (6+ months)",
+     "price": 235,
+     "oldPrice": 250
+    }
+   ],
+   "rating": "4.8 (5.9k)",
+   "stock": 60,
+   "image": "",
+   "description": "Fortified with Iron, Zinc, and 16 vitamins for baby's healthy growth.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "baby-himalaya-wipes",
+   "title": "Himalaya Herbal Gentle Baby Wipes",
+   "category": "baby-care",
+   "subcategory": "Baby Wipes",
+   "brand": "Himalaya",
+   "variants": [
+    {
+     "unit": "72 wipes pack with lid",
+     "price": 125,
+     "oldPrice": 190
+    }
+   ],
+   "rating": "4.8 (7.4k)",
+   "stock": 85,
+   "image": "",
+   "description": "Alcohol-free soothing wipes enriched with Indian lotus and aloe vera.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "baby-johnson-shampoo",
+   "title": "Johnson's Baby No More Tears Shampoo",
+   "category": "baby-care",
+   "subcategory": "Baby Shampoo",
+   "brand": "Johnson's",
+   "variants": [
+    {
+     "unit": "200 ml bottle",
+     "price": 185,
+     "oldPrice": 210
+    }
+   ],
+   "rating": "4.9 (4.8k)",
+   "stock": 50,
+   "image": "",
+   "description": "Soap-free hypoallergenic formula gentle to baby's eyes and scalp.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "baby-himalaya-soap",
+   "title": "Himalaya Extra Moisturizing Baby Soap",
+   "category": "baby-care",
+   "subcategory": "Baby Soap",
+   "brand": "Himalaya",
+   "variants": [
+    {
+     "unit": "Pack of 4 (75g each)",
+     "price": 165,
+     "oldPrice": 200
+    }
+   ],
+   "rating": "4.8 (4.1k)",
+   "stock": 60,
+   "image": "",
+   "description": "Infused with olive oil and almond oil for delicate baby skin hydration.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "pet-pedigree-chicken",
+   "title": "Pedigree Adult Chicken & Vegetables Dry Dog Food",
+   "category": "pet-supplies",
+   "subcategory": "Dog Food",
+   "brand": "Pedigree",
+   "variants": [
+    {
+     "unit": "1.2 kg bag",
+     "price": 285,
+     "oldPrice": 320
+    },
+    {
+     "unit": "3 kg bag",
+     "price": 680,
+     "oldPrice": 780
+    }
+   ],
+   "rating": "4.9 (6.4k)",
+   "stock": 55,
+   "image": "",
+   "description": "Complete balanced dog food for strong natural defenses and shiny coat.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "pet-whiskas-catfood",
+   "title": "Whiskas Adult Ocean Fish & Mackerel Dry Food",
+   "category": "pet-supplies",
+   "subcategory": "Cat Food",
+   "brand": "Whiskas",
+   "variants": [
+    {
+     "unit": "450 g pouch",
+     "price": 175,
+     "oldPrice": 200
+    },
+    {
+     "unit": "1.2 kg bag",
+     "price": 420,
+     "oldPrice": 480
+    }
+   ],
+   "rating": "4.8 (3.9k)",
+   "stock": 45,
+   "image": "",
+   "description": "Crunchy pockets stuffed with real ocean fish flavor for feline health.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "pet-choostix-treats",
+   "title": "Choostix Pressed Calcium Dog Chew Sticks",
+   "category": "pet-supplies",
+   "subcategory": "Pet Treats",
+   "brand": "Choostix",
+   "variants": [
+    {
+     "unit": "450 g pack (10 sticks)",
+     "price": 185,
+     "oldPrice": 230
+    }
+   ],
+   "rating": "4.7 (2.1k)",
+   "stock": 50,
+   "image": "",
+   "description": "Helps reduce dental tartar and gives chewing exercise to adult dogs.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fresh-green-capsicum-shimla-mirch",
+   "title": "Fresh Green Capsicum (Shimla Mirch)",
+   "category": "vegetables",
+   "subcategory": "Fresh Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "250 g",
+     "price": 24,
+     "oldPrice": 32
+    },
+    {
+     "unit": "500 g",
+     "price": 46,
+     "oldPrice": 60
+    }
+   ],
+   "rating": "4.8 (2.1k)",
+   "stock": 60,
+   "image": "",
+   "description": "Fresh Green Capsicum (Shimla Mirch) from Farm Fresh. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "fresh-cauliflower-phool-gobi",
+   "title": "Fresh Cauliflower (Phool Gobi)",
+   "category": "vegetables",
+   "subcategory": "Fresh Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "1 pc",
+     "price": 38,
+     "oldPrice": 50
+    }
+   ],
+   "rating": "4.6 (2.3k)",
+   "stock": 40,
+   "image": "",
+   "description": "Fresh Cauliflower (Phool Gobi) from Farm Fresh. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "ladies-finger-bhindi",
+   "title": "Ladies Finger (Bhindi)",
+   "category": "vegetables",
+   "subcategory": "Fresh Vegetables",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "250 g",
+     "price": 22,
+     "oldPrice": 30
+    },
+    {
+     "unit": "500 g",
+     "price": 42,
+     "oldPrice": 56
+    }
+   ],
+   "rating": "4.3 (2.5k)",
+   "stock": 50,
+   "image": "",
+   "description": "Ladies Finger (Bhindi) from Farm Fresh. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "green-seedless-grapes",
+   "title": "Green Seedless Grapes",
+   "category": "fruits",
+   "subcategory": "Fresh Fruits",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 70,
+     "oldPrice": 95
+    }
+   ],
+   "rating": "4.5 (0.8k)",
+   "stock": 35,
+   "image": "",
+   "description": "Green Seedless Grapes from Farm Fresh. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fresh-pomegranate-anar",
+   "title": "Fresh Pomegranate (Anar)",
+   "category": "fruits",
+   "subcategory": "Fresh Fruits",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 85,
+     "oldPrice": 115
+    }
+   ],
+   "rating": "4.0 (1.1k)",
+   "stock": 30,
+   "image": "",
+   "description": "Fresh Pomegranate (Anar) from Farm Fresh. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": true,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fresh-lemon-nimbu",
+   "title": "Fresh Lemon (Nimbu)",
+   "category": "fruits",
+   "subcategory": "Citrus Fruits",
+   "brand": "Farm Fresh",
+   "variants": [
+    {
+     "unit": "250 g",
+     "price": 25,
+     "oldPrice": 35
+    },
+    {
+     "unit": "500 g",
+     "price": 48,
+     "oldPrice": 65
+    }
+   ],
+   "rating": "4.0 (2.8k)",
+   "stock": 80,
+   "image": "",
+   "description": "Fresh Lemon (Nimbu) from Farm Fresh. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "amul-masti-dahi-curd",
+   "title": "Amul Masti Dahi (Curd)",
+   "category": "dairy-eggs",
+   "subcategory": "Curd & Yogurt",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "400 g",
+     "price": 35,
+     "oldPrice": 40
+    },
+    {
+     "unit": "1 kg",
+     "price": 80,
+     "oldPrice": 90
+    }
+   ],
+   "rating": "4.8 (2.8k)",
+   "stock": 60,
+   "image": "",
+   "description": "Amul Masti Dahi (Curd) from Amul. Quality checked and delivered fresh to your door.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "mother-dairy-full-cream-milk",
+   "title": "Mother Dairy Full Cream Milk",
+   "category": "dairy-eggs",
+   "subcategory": "Milk",
+   "brand": "Mother Dairy",
+   "variants": [
+    {
+     "unit": "500 ml",
+     "price": 35,
+     "oldPrice": 36
+    },
+    {
+     "unit": "1 L",
+     "price": 68,
+     "oldPrice": 70
+    }
+   ],
+   "rating": "4.2 (1.8k)",
+   "stock": 90,
+   "image": "",
+   "description": "Mother Dairy Full Cream Milk from Mother Dairy. Quality checked and delivered fresh to your door.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "gokul-cow-milk",
+   "title": "Gokul Cow Milk",
+   "category": "dairy-eggs",
+   "subcategory": "Milk",
+   "brand": "Gokul",
+   "variants": [
+    {
+     "unit": "500 ml",
+     "price": 29,
+     "oldPrice": 30
+    },
+    {
+     "unit": "1 L",
+     "price": 56,
+     "oldPrice": 58
+    }
+   ],
+   "rating": "4.5 (1.8k)",
+   "stock": 80,
+   "image": "",
+   "description": "Gokul Cow Milk from Gokul. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "britannia-good-day-cashew-cookies",
+   "title": "Britannia Good Day Cashew Cookies",
+   "category": "biscuits-cookies",
+   "subcategory": "Cream Biscuits",
+   "brand": "Britannia",
+   "variants": [
+    {
+     "unit": "75 g",
+     "price": 20,
+     "oldPrice": 20
+    },
+    {
+     "unit": "200 g",
+     "price": 45,
+     "oldPrice": 50
+    }
+   ],
+   "rating": "4.8 (2.6k)",
+   "stock": 90,
+   "image": "",
+   "description": "Britannia Good Day Cashew Cookies from Britannia. Quality checked and delivered fresh to your door.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "alpenliebe-candy-jar",
+   "title": "Alpenliebe Candy Jar",
+   "category": "chocolates-sweets",
+   "subcategory": "Candies",
+   "brand": "Perfetti",
+   "variants": [
+    {
+     "unit": "100 pcs",
+     "price": 199,
+     "oldPrice": 225
+    }
+   ],
+   "rating": "4.9 (1.6k)",
+   "stock": 40,
+   "image": "",
+   "description": "Alpenliebe Candy Jar from Perfetti. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "amul-vanilla-ice-cream-tub",
+   "title": "Amul Vanilla Ice Cream Tub",
+   "category": "icecream-frozen",
+   "subcategory": "Ice Cream Cups",
+   "brand": "Amul",
+   "variants": [
+    {
+     "unit": "500 ml",
+     "price": 120,
+     "oldPrice": 135
+    },
+    {
+     "unit": "1 L",
+     "price": 210,
+     "oldPrice": 240
+    }
+   ],
+   "rating": "4.5 (0.9k)",
+   "stock": 30,
+   "image": "",
+   "description": "Amul Vanilla Ice Cream Tub from Amul. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "kwality-wall-s-cornetto-butterscotch",
+   "title": "Kwality Wall's Cornetto Butterscotch",
+   "category": "icecream-frozen",
+   "subcategory": "Ice Cream",
+   "brand": "Kwality Walls",
+   "variants": [
+    {
+     "unit": "1 pc",
+     "price": 50,
+     "oldPrice": 55
+    }
+   ],
+   "rating": "4.2 (3.2k)",
+   "stock": 45,
+   "image": "",
+   "description": "Kwality Wall's Cornetto Butterscotch from Kwality Walls. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "pringles-sour-cream-onion",
+   "title": "Pringles Sour Cream & Onion",
+   "category": "snacks-namkeen",
+   "subcategory": "Chips",
+   "brand": "Pringles",
+   "variants": [
+    {
+     "unit": "107 g",
+     "price": 125,
+     "oldPrice": 140
+    }
+   ],
+   "rating": "4.8 (2.1k)",
+   "stock": 40,
+   "image": "",
+   "description": "Pringles Sour Cream & Onion from Pringles. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "bisleri-mineral-water",
+   "title": "Bisleri Mineral Water",
+   "category": "drinks-beverages",
+   "subcategory": "Packaged Water",
+   "brand": "Bisleri",
+   "variants": [
+    {
+     "unit": "1 L",
+     "price": 20,
+     "oldPrice": 20
+    },
+    {
+     "unit": "2 L",
+     "price": 35,
+     "oldPrice": 40
+    }
+   ],
+   "rating": "4.8 (2.7k)",
+   "stock": 200,
+   "image": "",
+   "description": "Bisleri Mineral Water from Bisleri. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "brooke-bond-red-label-tea",
+   "title": "Brooke Bond Red Label Tea",
+   "category": "tea-coffee",
+   "subcategory": "Tea",
+   "brand": "Red Label",
+   "variants": [
+    {
+     "unit": "250 g",
+     "price": 120,
+     "oldPrice": 135
+    },
+    {
+     "unit": "500 g",
+     "price": 230,
+     "oldPrice": 260
+    }
+   ],
+   "rating": "4.7 (2.1k)",
+   "stock": 70,
+   "image": "",
+   "description": "Brooke Bond Red Label Tea from Red Label. Quality checked and delivered fresh to your door.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "bru-instant-coffee",
+   "title": "Bru Instant Coffee",
+   "category": "tea-coffee",
+   "subcategory": "Coffee",
+   "brand": "Bru",
+   "variants": [
+    {
+     "unit": "50 g",
+     "price": 140,
+     "oldPrice": 155
+    },
+    {
+     "unit": "100 g",
+     "price": 260,
+     "oldPrice": 290
+    }
+   ],
+   "rating": "4.7 (1.6k)",
+   "stock": 50,
+   "image": "",
+   "description": "Bru Instant Coffee from Bru. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "horlicks-classic-malt-jar",
+   "title": "Horlicks Classic Malt Jar",
+   "category": "tea-coffee",
+   "subcategory": "Health Drinks",
+   "brand": "Horlicks",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 240,
+     "oldPrice": 270
+    }
+   ],
+   "rating": "4.6 (0.5k)",
+   "stock": 40,
+   "image": "",
+   "description": "Horlicks Classic Malt Jar from Horlicks. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "pillsbury-chakki-fresh-atta",
+   "title": "Pillsbury Chakki Fresh Atta",
+   "category": "atta-flour",
+   "subcategory": "Wheat Atta",
+   "brand": "Pillsbury",
+   "variants": [
+    {
+     "unit": "5 kg",
+     "price": 255,
+     "oldPrice": 290
+    },
+    {
+     "unit": "10 kg",
+     "price": 495,
+     "oldPrice": 560
+    }
+   ],
+   "rating": "4.8 (1.5k)",
+   "stock": 45,
+   "image": "",
+   "description": "Pillsbury Chakki Fresh Atta from Pillsbury. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "tata-sampann-besan",
+   "title": "Tata Sampann Besan",
+   "category": "atta-flour",
+   "subcategory": "Besan",
+   "brand": "Tata Sampann",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 70,
+     "oldPrice": 80
+    },
+    {
+     "unit": "1 kg",
+     "price": 130,
+     "oldPrice": 150
+    }
+   ],
+   "rating": "4.1 (0.6k)",
+   "stock": 50,
+   "image": "",
+   "description": "Tata Sampann Besan from Tata Sampann. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "india-gate-basmati-rice-classic",
+   "title": "India Gate Basmati Rice Classic",
+   "category": "rice-grains",
+   "subcategory": "Basmati Rice",
+   "brand": "India Gate",
+   "variants": [
+    {
+     "unit": "1 kg",
+     "price": 130,
+     "oldPrice": 150
+    },
+    {
+     "unit": "5 kg",
+     "price": 620,
+     "oldPrice": 700
+    }
+   ],
+   "rating": "4.8 (1.3k)",
+   "stock": 50,
+   "image": "",
+   "description": "India Gate Basmati Rice Classic from India Gate. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "tata-sampann-urad-dal-split",
+   "title": "Tata Sampann Urad Dal Split",
+   "category": "dal-pulses",
+   "subcategory": "Urad Dal",
+   "brand": "Tata Sampann",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 85,
+     "oldPrice": 98
+    },
+    {
+     "unit": "1 kg",
+     "price": 165,
+     "oldPrice": 185
+    }
+   ],
+   "rating": "4.4 (2.1k)",
+   "stock": 45,
+   "image": "",
+   "description": "Tata Sampann Urad Dal Split from Tata Sampann. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "rajma-chitra",
+   "title": "Rajma Chitra",
+   "category": "dal-pulses",
+   "subcategory": "Rajma",
+   "brand": "Organic Tattva",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 90,
+     "oldPrice": 105
+    }
+   ],
+   "rating": "4.1 (2.4k)",
+   "stock": 35,
+   "image": "",
+   "description": "Rajma Chitra from Organic Tattva. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fortune-sunlite-refined-sunflower-oil",
+   "title": "Fortune Sunlite Refined Sunflower Oil",
+   "category": "oil-ghee",
+   "subcategory": "Sunflower Oil",
+   "brand": "Fortune",
+   "variants": [
+    {
+     "unit": "1 L",
+     "price": 140,
+     "oldPrice": 165
+    },
+    {
+     "unit": "5 L",
+     "price": 670,
+     "oldPrice": 760
+    }
+   ],
+   "rating": "4.4 (1.4k)",
+   "stock": 60,
+   "image": "",
+   "description": "Fortune Sunlite Refined Sunflower Oil from Fortune. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "mother-dairy-cow-ghee",
+   "title": "Mother Dairy Cow Ghee",
+   "category": "oil-ghee",
+   "subcategory": "Ghee",
+   "brand": "Mother Dairy",
+   "variants": [
+    {
+     "unit": "500 ml",
+     "price": 330,
+     "oldPrice": 360
+    },
+    {
+     "unit": "1 L",
+     "price": 640,
+     "oldPrice": 700
+    }
+   ],
+   "rating": "4.5 (0.7k)",
+   "stock": 40,
+   "image": "",
+   "description": "Mother Dairy Cow Ghee from Mother Dairy. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "everest-red-chilli-powder",
+   "title": "Everest Red Chilli Powder",
+   "category": "spices-masala",
+   "subcategory": "Powder Spices",
+   "brand": "Everest",
+   "variants": [
+    {
+     "unit": "100 g",
+     "price": 48,
+     "oldPrice": 54
+    },
+    {
+     "unit": "200 g",
+     "price": 92,
+     "oldPrice": 102
+    }
+   ],
+   "rating": "4.5 (1.1k)",
+   "stock": 80,
+   "image": "",
+   "description": "Everest Red Chilli Powder from Everest. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "madhur-pure-hygienic-sugar",
+   "title": "Madhur Pure & Hygienic Sugar",
+   "category": "sugar-sweeteners",
+   "subcategory": "Sugar",
+   "brand": "Madhur",
+   "variants": [
+    {
+     "unit": "1 kg",
+     "price": 52,
+     "oldPrice": 58
+    },
+    {
+     "unit": "5 kg",
+     "price": 255,
+     "oldPrice": 285
+    }
+   ],
+   "rating": "4.3 (1.9k)",
+   "stock": 100,
+   "image": "",
+   "description": "Madhur Pure & Hygienic Sugar from Madhur. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "sundrop-peanut-butter-crunchy",
+   "title": "Sundrop Peanut Butter Crunchy",
+   "category": "sauces-spreads",
+   "subcategory": "Peanut Butter",
+   "brand": "Sundrop",
+   "variants": [
+    {
+     "unit": "340 g",
+     "price": 165,
+     "oldPrice": 185
+    }
+   ],
+   "rating": "4.2 (2.8k)",
+   "stock": 40,
+   "image": "",
+   "description": "Sundrop Peanut Butter Crunchy from Sundrop. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "del-monte-penne-pasta",
+   "title": "Del Monte Penne Pasta",
+   "category": "instant-packaged",
+   "subcategory": "Pasta",
+   "brand": "Del Monte",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 99,
+     "oldPrice": 115
+    }
+   ],
+   "rating": "4.7 (3.2k)",
+   "stock": 45,
+   "image": "",
+   "description": "Del Monte Penne Pasta from Del Monte. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "mccain-frozen-green-peas",
+   "title": "McCain Frozen Green Peas",
+   "category": "frozen-food",
+   "subcategory": "Frozen Vegetables",
+   "brand": "McCain",
+   "variants": [
+    {
+     "unit": "500 g",
+     "price": 99,
+     "oldPrice": 115
+    }
+   ],
+   "rating": "4.5 (2.3k)",
+   "stock": 40,
+   "image": "",
+   "description": "McCain Frozen Green Peas from McCain. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "mccain-smiles-potato-shapes",
+   "title": "McCain Smiles Potato Shapes",
+   "category": "frozen-food",
+   "subcategory": "French Fries",
+   "brand": "McCain",
+   "variants": [
+    {
+     "unit": "415 g",
+     "price": 140,
+     "oldPrice": 155
+    }
+   ],
+   "rating": "4.7 (3.2k)",
+   "stock": 35,
+   "image": "",
+   "description": "McCain Smiles Potato Shapes from McCain. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "britannia-sandwich-white-bread",
+   "title": "Britannia Sandwich White Bread",
+   "category": "bakery",
+   "subcategory": "Bread",
+   "brand": "Britannia",
+   "variants": [
+    {
+     "unit": "400 g",
+     "price": 45,
+     "oldPrice": 48
+    }
+   ],
+   "rating": "4.5 (3.1k)",
+   "stock": 60,
+   "image": "",
+   "description": "Britannia Sandwich White Bread from Britannia. Quality checked and delivered fresh to your door.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "harvest-gold-brown-bread",
+   "title": "Harvest Gold Brown Bread",
+   "category": "bakery",
+   "subcategory": "Brown Bread",
+   "brand": "Harvest Gold",
+   "variants": [
+    {
+     "unit": "400 g",
+     "price": 50,
+     "oldPrice": 55
+    }
+   ],
+   "rating": "4.4 (2.7k)",
+   "stock": 50,
+   "image": "",
+   "description": "Harvest Gold Brown Bread from Harvest Gold. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "modern-pav-bun",
+   "title": "Modern Pav (Bun)",
+   "category": "bakery",
+   "subcategory": "Pav & Bun",
+   "brand": "Modern",
+   "variants": [
+    {
+     "unit": "6 pcs",
+     "price": 30,
+     "oldPrice": 32
+    }
+   ],
+   "rating": "4.6 (0.7k)",
+   "stock": 50,
+   "image": "",
+   "description": "Modern Pav (Bun) from Modern. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "california-almonds-badam",
+   "title": "California Almonds (Badam)",
+   "category": "dry-fruits",
+   "subcategory": "Almonds",
+   "brand": "Tata Sampann",
+   "variants": [
+    {
+     "unit": "250 g",
+     "price": 230,
+     "oldPrice": 265
+    },
+    {
+     "unit": "500 g",
+     "price": 440,
+     "oldPrice": 510
+    }
+   ],
+   "rating": "4.7 (0.7k)",
+   "stock": 40,
+   "image": "",
+   "description": "California Almonds (Badam) from Tata Sampann. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "cashew-nuts-kaju-whole",
+   "title": "Cashew Nuts (Kaju) Whole",
+   "category": "dry-fruits",
+   "subcategory": "Cashews",
+   "brand": "Nutraj",
+   "variants": [
+    {
+     "unit": "250 g",
+     "price": 245,
+     "oldPrice": 285
+    }
+   ],
+   "rating": "4.1 (1.8k)",
+   "stock": 35,
+   "image": "",
+   "description": "Cashew Nuts (Kaju) Whole from Nutraj. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "seedless-raisins-kishmish",
+   "title": "Seedless Raisins (Kishmish)",
+   "category": "dry-fruits",
+   "subcategory": "Raisins",
+   "brand": "Nutraj",
+   "variants": [
+    {
+     "unit": "250 g",
+     "price": 90,
+     "oldPrice": 105
+    }
+   ],
+   "rating": "4.9 (3.3k)",
+   "stock": 45,
+   "image": "",
+   "description": "Seedless Raisins (Kishmish) from Nutraj. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "colgate-strong-teeth-toothpaste",
+   "title": "Colgate Strong Teeth Toothpaste",
+   "category": "personal-care",
+   "subcategory": "Oral Care",
+   "brand": "Colgate",
+   "variants": [
+    {
+     "unit": "100 g",
+     "price": 58,
+     "oldPrice": 65
+    },
+    {
+     "unit": "200 g",
+     "price": 105,
+     "oldPrice": 120
+    }
+   ],
+   "rating": "4.5 (2.0k)",
+   "stock": 90,
+   "image": "",
+   "description": "Colgate Strong Teeth Toothpaste from Colgate. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": true
+  },
+  {
+   "id": "clinic-plus-strong-long-shampoo",
+   "title": "Clinic Plus Strong & Long Shampoo",
+   "category": "personal-care",
+   "subcategory": "Shampoo & Conditioner",
+   "brand": "Clinic Plus",
+   "variants": [
+    {
+     "unit": "340 ml",
+     "price": 185,
+     "oldPrice": 210
+    }
+   ],
+   "rating": "4.3 (1.8k)",
+   "stock": 50,
+   "image": "",
+   "description": "Clinic Plus Strong & Long Shampoo from Clinic Plus. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "lux-soft-touch-soap",
+   "title": "Lux Soft Touch Soap",
+   "category": "personal-care",
+   "subcategory": "Bath & Body",
+   "brand": "Lux",
+   "variants": [
+    {
+     "unit": "100 g",
+     "price": 38,
+     "oldPrice": 42
+    },
+    {
+     "unit": "4 x 100 g",
+     "price": 140,
+     "oldPrice": 160
+    }
+   ],
+   "rating": "4.0 (0.7k)",
+   "stock": 70,
+   "image": "",
+   "description": "Lux Soft Touch Soap from Lux. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "pampers-active-baby-pants-m",
+   "title": "Pampers Active Baby Pants M",
+   "category": "baby-care",
+   "subcategory": "Diapers",
+   "brand": "Pampers",
+   "variants": [
+    {
+     "unit": "44 pcs",
+     "price": 699,
+     "oldPrice": 799
+    }
+   ],
+   "rating": "4.9 (1.4k)",
+   "stock": 30,
+   "image": "",
+   "description": "Pampers Active Baby Pants M from Pampers. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "lays-classic-salted",
+   "title": "Lay's Classic Salted Potato Chips",
+   "category": "snacks-namkeen",
+   "subcategory": "Chips",
+   "brand": "Lay's",
+   "variants": [
+    {
+     "unit": "50 g",
+     "price": 20,
+     "oldPrice": 20
+    },
+    {
+     "unit": "90 g",
+     "price": 40,
+     "oldPrice": 40
+    }
+   ],
+   "rating": "4.5 (1.1k)",
+   "stock": 90,
+   "image": "",
+   "description": "Lay's Classic Salted Potato Chips from Lay's. Quality checked and delivered fresh to your door.",
+   "isBestSeller": true,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "fortune-groundnut-oil",
+   "title": "Fortune Kachi Ghani Groundnut Oil",
+   "category": "oil-ghee",
+   "subcategory": "Groundnut Oil",
+   "brand": "Fortune",
+   "variants": [
+    {
+     "unit": "1 L",
+     "price": 210,
+     "oldPrice": 240
+    }
+   ],
+   "rating": "4.5 (1.1k)",
+   "stock": 35,
+   "image": "",
+   "description": "Fortune Kachi Ghani Groundnut Oil from Fortune. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "drools-puppy-food",
+   "title": "Drools Chicken & Egg Puppy Dry Food",
+   "category": "pet-supplies",
+   "subcategory": "Dog Food",
+   "brand": "Drools",
+   "variants": [
+    {
+     "unit": "1.2 kg",
+     "price": 320,
+     "oldPrice": 360
+    },
+    {
+     "unit": "3 kg",
+     "price": 690,
+     "oldPrice": 780
+    }
+   ],
+   "rating": "4.5 (1.1k)",
+   "stock": 25,
+   "image": "",
+   "description": "Drools Chicken & Egg Puppy Dry Food from Drools. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "pedigree-dentastix",
+   "title": "Pedigree Dentastix Oral Care Treats",
+   "category": "pet-supplies",
+   "subcategory": "Pet Treats",
+   "brand": "Pedigree",
+   "variants": [
+    {
+     "unit": "7 sticks",
+     "price": 150,
+     "oldPrice": 170
+    }
+   ],
+   "rating": "4.5 (1.1k)",
+   "stock": 40,
+   "image": "",
+   "description": "Pedigree Dentastix Oral Care Treats from Pedigree. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  },
+  {
+   "id": "meo-cat-food",
+   "title": "Me-O Tuna Adult Cat Food",
+   "category": "pet-supplies",
+   "subcategory": "Cat Food",
+   "brand": "Me-O",
+   "variants": [
+    {
+     "unit": "450 g",
+     "price": 215,
+     "oldPrice": 240
+    }
+   ],
+   "rating": "4.5 (1.1k)",
+   "stock": 30,
+   "image": "",
+   "description": "Me-O Tuna Adult Cat Food from Me-O. Quality checked and delivered fresh to your door.",
+   "isBestSeller": false,
+   "isFreshPick": false,
+   "isDailyEssential": false
+  }
+ ]
+}

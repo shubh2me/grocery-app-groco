@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Groco Staff</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+ *{box-sizing:border-box} body{margin:0;font-family:'Segoe UI',Roboto,Arial,sans-serif;background:#f1f5f9;color:#0f172a;font-size:15px}
+ button,input,select,textarea{font:inherit} input,select,textarea{width:100%;padding:.65rem .8rem;border:1px solid #cbd5e1;border-radius:10px;background:#fff}
+ .btn{background:#00b761;color:#fff;border:0;border-radius:10px;padding:.7rem 1.1rem;font-weight:700;cursor:pointer} .btn:disabled{opacity:.5;cursor:not-allowed}
+ .btn.red{background:#ef4444}.btn.grey{background:#64748b}.btn.blue{background:#0284c7}.btn.line{background:#fff;color:#00b761;border:1.5px solid #00b761}.btn.sm{padding:.4rem .8rem;font-size:.85rem}
+ #login{max-width:380px;margin:12vh auto;background:#fff;padding:2rem;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,.08)} #login h1{margin:0 0 .3rem;font-size:1.6rem} #login p{color:#64748b;margin:.2rem 0 1rem} #login input{margin:.35rem 0}
+ header{background:#0f172a;color:#fff;padding:.8rem 1rem;display:flex;align-items:center;justify-content:space-between;gap:.6rem;position:sticky;top:0;z-index:50}
+ header small{color:#94a3b8;display:block} .pill{font-size:.7rem;border-radius:99px;padding:.15rem .6rem;font-weight:700;background:#dcfce7;color:#15803d;margin-left:.4rem} .pill.off{background:#fee2e2;color:#b91c1c}
+ main{padding:1rem;max-width:760px;margin:0 auto;padding-bottom:5.5rem}
+ nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e2e8f0;display:flex;z-index:60}
+ nav button{flex:1;border:0;background:none;padding:.7rem .2rem;font-size:.78rem;color:#64748b;font-weight:600;cursor:pointer} nav button.on{color:#00b761;border-top:3px solid #00b761;margin-top:-1px} nav b{display:block;font-size:1.25rem}
+ .card{background:#fff;border-radius:14px;padding:1rem;margin-bottom:.8rem;box-shadow:0 1px 3px rgba(0,0,0,.05)} .row{display:flex;justify-content:space-between;align-items:center;gap:.6rem}
+ .muted{color:#64748b;font-size:.85rem} .tag{display:inline-block;font-size:.72rem;font-weight:700;padding:.15rem .6rem;border-radius:99px;background:#e0f2fe;color:#0369a1} .tag.g{background:#dcfce7;color:#15803d}.tag.r{background:#fee2e2;color:#b91c1c}.tag.y{background:#fef3c7;color:#92400e}
+ .banner{background:#fff4d6;border:1px solid #f59e0b;border-radius:12px;padding:.8rem 1rem;margin-bottom:.8rem;font-weight:600}
+ .item{display:flex;gap:.7rem;align-items:center;padding:.5rem 0;border-bottom:1px solid #f1f5f9} .item input[type=checkbox]{width:22px;height:22px;flex:none}
+ .item.done{opacity:.45;text-decoration:line-through} h3{margin:.2rem 0 .6rem} .grid2{display:grid;grid-template-columns:1fr 1fr;gap:.6rem} .stat{background:#f8fafc;border-radius:12px;padding:.8rem;text-align:center} .stat b{display:block;font-size:1.4rem}
+ #sheetbg{position:fixed;inset:0;background:rgba(15,23,42,.55);display:none;align-items:flex-end;justify-content:center;z-index:200} #sheetbg.open{display:flex}
+ #sheet{background:#fff;border-radius:18px 18px 0 0;padding:1.2rem;width:min(560px,100%);max-height:90vh;overflow:auto} #sheet label{display:block;font-size:.8rem;font-weight:700;color:#475569;margin:.7rem 0 .2rem}
+ #toast{position:fixed;left:50%;transform:translateX(-50%);bottom:5rem;background:#0f172a;color:#fff;padding:.7rem 1.2rem;border-radius:99px;z-index:300;display:none;max-width:90%;text-align:center} #toast.show{display:block}
+ #map{height:60vh;border-radius:14px} table{width:100%;border-collapse:collapse;font-size:.85rem} td,th{padding:.45rem .3rem;border-bottom:1px solid #f1f5f9;text-align:left}
+</style>
+</head>
+<body>
+<div id="login">
+    <h1>🧺 Groco Staff</h1><p>Pickers and delivery riders sign in here.</p>
+    <input id="l-email" type="email" placeholder="Email" autocomplete="username">
+    <input id="l-pass" type="password" placeholder="Password" autocomplete="current-password">
+    <p id="l-err" style="color:#ef4444;min-height:1.2rem;margin:.3rem 0"></p>
+    <button class="btn" style="width:100%" onclick="doLogin()">Sign in</button>
+    <p style="text-align:center;margin:.8rem 0 0"><a href="#" onclick="showForgot();return false" style="color:#0284c7;font-size:.9rem">Forgot password?</a></p>
+    <div id="fg" style="display:none;margin-top:.8rem">
+        <input id="fg-code" placeholder="6-digit code" inputmode="numeric" maxlength="6" style="display:none">
+        <input id="fg-pass" type="password" placeholder="New password (min 6)" style="display:none">
+        <button class="btn grey" style="width:100%;margin-top:.4rem" id="fg-btn" onclick="forgotStep()">Send code to my phone</button>
+        <p id="fg-msg" class="muted" style="margin:.5rem 0 0"></p>
+    </div>
+</div>
+
+<div id="app" style="display:none">
+    <header>
+        <div><b id="h-name"></b><span class="pill off" id="h-live">offline</span><small id="h-shift"></small></div>
+        <button class="btn" id="h-punch" onclick="punch()">Punch in</button>
+    </header>
+    <main id="view"></main>
+    <nav id="nav"></nav>
+</div>
+<div id="sheetbg" onclick="if(event.target===this)closeSheet()"><div id="sheet"></div></div>
+<div id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const API = (location.protocol.startsWith('http') && !['5500', '5501'].includes(location.port)) ? '/api' : 'http://localhost:3000/api';
+const $ = s => document.querySelector(s);
+const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const money = n => '₹' + Math.round(Number(n) * 100) / 100;
+let token = localStorage.getItem('groco_staff_token'), me = null, tab = null, es = null, categories = [];
+let checks = {}, watchId = null, lastSent = 0, map = null, myMarker = null, destMarkers = [], myPos = null, deliveries = { available: [], mine: [] };
+
+function toast(m) { const t = $('#toast'); t.innerText = m; t.classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove('show'), 3200); try { navigator.vibrate && navigator.vibrate(60); } catch (e) {} }
+function sheet(html) { $('#sheet').innerHTML = html; $('#sheetbg').classList.add('open'); }
+function closeSheet() { $('#sheetbg').classList.remove('open'); }
+async function api(path, opts = {}) {
+    const res = await fetch(API + path, { ...opts, headers: { ...(opts.body && !(opts.body instanceof FormData) ? { 'Content-Type': 'application/json' } : {}), Authorization: 'Bearer ' + token, ...(opts.headers || {}) } });
+    if (res.status === 401) { logout(true); throw new Error('Session expired'); }
+    const d = await res.json().catch(() => ({}));
+    if (!res.ok) throw Object.assign(new Error(d.message || 'Something went wrong'), { needPunch: d.needPunch });
+    return d;
+}
+const act = async (fn) => { try { await fn(); } catch (e) { if (e.message !== 'Session expired') toast(e.message); } };
+
+// ---------- login ----------
+async function doLogin() {
+    $('#l-err').innerText = '';
+    try {
+        const r = await fetch(API + '/auth/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: $('#l-email').value.trim(), password: $('#l-pass').value }) });
+        const d = await r.json();
+        if (!r.ok) return $('#l-err').innerText = d.message || 'Login failed';
+        if (!['picker', 'rider', 'admin'].includes(d.user.role)) return $('#l-err').innerText = 'This page is for staff. Customers shop at the store.';
+        token = d.token; localStorage.setItem('groco_staff_token', token); boot();
+    } catch (e) { $('#l-err').innerText = 'Cannot reach the server. Is node server.js running?'; }
+}
+$('#l-pass').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+function logout(silent) { stopTracking(); if (es) es.close(); localStorage.removeItem('groco_staff_token'); token = null; $('#app').style.display = 'none'; $('#login').style.display = 'block'; if (!silent) toast('Signed out'); }
+
+// ---------- forgot password ----------
+let fgStep = 1;
+function showForgot() { $('#fg').style.display = 'block'; fgStep = 1; $('#fg-msg').innerText = 'Enter your email above, then tap the button.'; }
+async function forgotStep() {
+    const email = $('#l-email').value.trim(); if (!email) return $('#fg-msg').innerText = 'Type your email in the box above first.';
+    const post = (path, body) => fetch(API + path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }).then(async r => ({ ok: r.ok, d: await r.json().catch(() => ({})) }));
+    try {
+        if (fgStep === 1) { const r = await post('/auth/forgot', { email }); $('#fg-msg').innerText = r.d.message || 'Failed'; if (r.ok) { fgStep = 2; $('#fg-code').style.display = $('#fg-pass').style.display = 'block'; $('#fg-btn').innerText = 'Change password'; } }
+        else { const r = await post('/auth/reset', { email, code: $('#fg-code').value, password: $('#fg-pass').value }); $('#fg-msg').innerText = r.ok ? 'Password changed. Sign in now.' : (r.d.message || 'Failed'); if (r.ok) { $('#fg').style.display = 'none'; $('#l-pass').value = ''; } }
+    } catch (e) { $('#fg-msg').innerText = 'Cannot reach the server'; }
+}
+
+// ---------- phone alerts (web push) ----------
+const b64 = k => { const p = '='.repeat((4 - k.length % 4) % 4), s = (k + p).replace(/-/g, '+').replace(/_/g, '/'), r = atob(s); return Uint8Array.from([...r].map(c => c.charCodeAt(0))); };
+async function enableAlerts() {
+    try {
+        if (!('serviceWorker' in navigator) || !('PushManager' in window)) throw new Error('This browser cannot receive background alerts.');
+        const k = await (await fetch(API + '/push/key')).json(); if (!k.available) throw new Error('The server has no push service yet (install the web-push package).');
+        if ((await Notification.requestPermission()) !== 'granted') throw new Error('Notifications were blocked in the browser.');
+        const reg = await navigator.serviceWorker.register('/sw.js'); await navigator.serviceWorker.ready;
+        const sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64(k.key) });
+        await api('/staff/push-subscribe', { method: 'POST', body: JSON.stringify({ subscription: sub }) }); toast('Phone alerts are ON'); 
+    } catch (e) { toast(e.message); }
+}
+
+// ---------- boot / header ----------
+async function boot() {
+    if (!token) return;
+    try { await refreshMe(); } catch (e) { return; }
+    categories = await (await fetch(API + '/categories')).json();
+    $('#login').style.display = 'none'; $('#app').style.display = 'block';
+    const isRider = me.user.role === 'rider';
+    window.TABS = isRider ? [['jobs', '🛵', 'Deliveries'], ['map', '🗺️', 'Map'], ['me', '👤', 'Me']]
+        : [['orders', '🧺', 'Orders'], ['stock', '📦', 'Stock'], ['expiry', '⏳', 'Expiry'], ['count', '✅', 'Count'], ['me', '👤', 'Me']];
+    tab = TABS[0][0]; connectLive(); render();
+}
+async function refreshMe() {
+    me = await api('/staff/me');
+    $('#h-name').innerText = me.user.name; $('#h-shift').innerText = `Shift ${me.shift.start || '--'} – ${me.shift.end || '--'}`;
+    const b = $('#h-punch'), done = me.today && me.today.punch_out;
+    b.innerText = me.onShift ? 'Punch out' : done ? 'Shift done' : 'Punch in'; b.className = 'btn' + (me.onShift ? ' red' : ''); b.disabled = !!done;
+    if (me.user.role === 'rider') me.onShift ? startTracking() : stopTracking();
+}
+async function punch() {
+    if (me.onShift && !confirm('Punch out and end your shift?')) return;
+    act(async () => { const r = await api('/staff/punch', { method: 'POST' }); toast(r.action === 'in' ? 'Punched in. Have a good shift!' : 'Punched out. See you tomorrow!'); await refreshMe(); render(); });
+}
+function connectLive() {
+    if (es) es.close(); es = new EventSource(`${API}/events?token=${encodeURIComponent(token)}`);
+    es.onopen = () => { $('#h-live').className = 'pill'; $('#h-live').innerText = 'live'; };
+    es.onerror = () => { $('#h-live').className = 'pill off'; $('#h-live').innerText = 'reconnecting'; };
+    es.addEventListener('order:new', () => { if (me.user.role !== 'rider') { toast('🔔 New order to pick!'); if (tab === 'orders') render(); } });
+    es.addEventListener('delivery:available', () => { if (me.user.role === 'rider') { toast('📦 New order ready for delivery'); if (tab === 'jobs') render(); } });
+    es.addEventListener('order:update', () => { if (['orders', 'jobs'].includes(tab) && !document.activeElement.closest('#view input')) render(); });
+}
+
+// ---------- navigation ----------
+function render() {
+    $('#nav').innerHTML = TABS.map(([id, ic, label]) => `<button class="${tab === id ? 'on' : ''}" onclick="go('${id}')"><b>${ic}</b>${label}</button>`).join('');
+    if (tab !== 'map' && map) { map.remove(); map = null; myMarker = null; destMarkers = []; }
+    ({ orders: viewOrders, stock: viewStock, expiry: viewExpiry, count: viewCount, jobs: viewJobs, map: viewMap, me: viewMe })[tab]();
+}
+function go(t) { tab = t; render(); window.scrollTo(0, 0); }
+const needPunchBanner = () => me.onShift ? '' : '<div class="banner">⏰ You are not punched in. Tap <b>Punch in</b> at the top to start your shift. Work actions are locked until you do.</div>';
+
+// ---------- PICKER: orders ----------
+async function viewOrders() {
+    const q = await api('/staff/pick-queue');
+    $('#view').innerHTML = needPunchBanner() + `<h3>Orders to pick <span class="tag">${q.length}</span></h3>` + (q.length ? q.map(o => {
+        const done = checks[o.id] || new Set(), mine = o.mine, all = o.items.length;
+        return `<div class="card"><div class="row"><div><b>${esc(o.id)}</b> · ${esc(o.customer_name.split(' ')[0])}<div class="muted">${esc(o.created_at.slice(11, 16))} · ${all} item(s)</div>${o.slot_label && !/^ASAP/.test(o.slot_label) ? `<span class="tag y">⏰ ${esc(o.slot_label)}</span>` : ''}</div>
+            ${o.status === 'Placed' ? `<button class="btn" onclick="pickStart('${o.id}')">Start picking</button>` : mine ? '<span class="tag y">You are picking</span>' : `<span class="tag">Picking: ${esc(o.picker_name || 'someone')}</span>`}</div>
+            ${mine ? `<div style="margin-top:.6rem">${o.items.map((it, i) => `<label class="item ${done.has(i) ? 'done' : ''}"><input type="checkbox" ${done.has(i) ? 'checked' : ''} onchange="tick('${o.id}',${i},this.checked,this)">
+                <div style="flex:1"><b>${esc(it.title)}</b> <span class="muted">(${esc(it.variant)})</span><div class="muted">📍 ${esc(it.aisle)}</div></div><b style="font-size:1.2rem">×${it.qty}</b><button type="button" class="btn red sm" onclick="event.preventDefault();missing('${o.id}','${esc(it.barcode)}','${esc(it.title).replace(/'/g, '')}')">Not found</button></label>`).join('')}
+                <div class="row" style="margin-top:.8rem"><button class="btn grey sm" onclick="release('${o.id}')">Give back</button><button class="btn" id="pk-${o.id}" ${done.size === all ? '' : 'disabled'} onclick="packed('${o.id}')">Mark packed ✓</button></div></div>` : ''}</div>`;
+    }).join('') : '<div class="card muted">No orders waiting. New ones appear here instantly.</div>');
+}
+const tick = (id, i, on, el) => {                          // update in place: no reload, no scroll jump
+    const set = (checks[id] = checks[id] || new Set()); on ? set.add(i) : set.delete(i);
+    el.closest('.item').classList.toggle('done', on);
+    $('#pk-' + id).disabled = set.size !== el.closest('.card').querySelectorAll('.item').length;
+};
+const missing = (id, bc, title) => { if (!confirm(`Mark "${title}" as NOT available? It is removed from the bill and the customer is told.`)) return;
+    act(async () => { const r = await api(`/staff/orders/${id}/missing`, { method: 'POST', body: JSON.stringify({ barcode: bc }) }); delete checks[id]; toast(r.cancelled ? 'All items missing: order cancelled' : 'Removed. Customer notified.'); viewOrders(); }); };
+const pickStart = id => act(async () => { await api(`/staff/orders/${id}/pick-start`, { method: 'POST' }); viewOrders(); });
+const release = id => act(async () => { await api(`/staff/orders/${id}/release`, { method: 'POST' }); delete checks[id]; viewOrders(); });
+const packed = id => act(async () => { await api(`/staff/orders/${id}/packed`, { method: 'POST' }); delete checks[id]; toast('Packed! A rider will pick it up.'); viewOrders(); });
+
+// ---------- PICKER: stock ----------
+let stockQ = '', stockCat = 'all';
+async function viewStock() {
+    $('#view').innerHTML = needPunchBanner() + `<div class="row" style="margin-bottom:.6rem"><h3 style="margin:0">Stock</h3><button class="btn" onclick="newProduct()">+ New product</button></div>
+        <div class="grid2"><input id="sq" placeholder="Search name, brand or barcode" value="${esc(stockQ)}"><select id="sc"><option value="all">All categories</option>${categories.map(c => `<option value="${esc(c.id)}" ${c.id === stockCat ? 'selected' : ''}>${esc(c.name)}</option>`).join('')}</select></div><div id="stocklist" style="margin-top:.8rem"></div>`;
+    $('#sq').oninput = e => { stockQ = e.target.value; clearTimeout(viewStock.t); viewStock.t = setTimeout(loadStock, 250); };
+    $('#sc').onchange = e => { stockCat = e.target.value; loadStock(); };
+    loadStock();
+}
+async function loadStock() {
+    const rows = await api(`/staff/inventory?q=${encodeURIComponent(stockQ)}&category=${stockCat}`);
+    const t = new Date().toLocaleDateString('en-CA');
+    $('#stocklist').innerHTML = rows.slice(0, 80).map(r => {
+        const days = r.next_expiry ? Math.round((new Date(r.next_expiry) - new Date(t)) / 864e5) : null;
+        return `<div class="card"><div class="row"><div><b>${esc(r.title)}</b> <span class="muted">(${esc(r.variant)})</span><div class="muted">${esc(r.barcode)} · ${esc(r.brand)}</div></div>
+            <button class="btn line sm" onclick="receive('${esc(r.barcode)}','${esc(r.title).replace(/'/g, '')}')">+ Receive</button></div>
+            <div style="margin-top:.4rem"><span class="tag ${r.sellable <= 0 ? 'r' : r.sellable <= 10 ? 'y' : 'g'}">${r.sellable} sellable</span> <span class="tag">${r.on_hand} on hand</span>
+            ${days === null ? '' : `<span class="tag ${days < 0 ? 'r' : days <= 7 ? 'y' : ''}">${days < 0 ? 'expired batch' : 'next expiry ' + r.next_expiry}</span>`}</div></div>`; }).join('') || '<div class="card muted">No products found.</div>';
+}
+function receive(bc, title) {
+    sheet(`<h3>Receive stock</h3><div class="muted">${title}</div>
+        <label>Units received</label><input id="rc-qty" type="number" min="1" inputmode="numeric">
+        <label>Expiry date (printed on the pack)</label><input id="rc-exp" type="date">
+        <label>Batch number (optional)</label><input id="rc-batch">
+        <div class="row" style="margin-top:1rem"><button class="btn grey" onclick="closeSheet()">Cancel</button><button class="btn" onclick="doReceive('${bc}')">Add to stock</button></div>`);
+}
+const doReceive = bc => act(async () => {
+    await api('/staff/receive', { method: 'POST', body: JSON.stringify({ barcode: bc, qty: $('#rc-qty').value, expiry_date: $('#rc-exp').value, batch_no: $('#rc-batch').value }) });
+    closeSheet(); toast('Stock added'); loadStock();
+});
+function newProduct() {
+    sheet(`<h3>Add a new product</h3>
+        <label>Product name *</label><input id="np-title"><label>Size / pack * (e.g. 500 g)</label><input id="np-variant">
+        <div class="grid2"><div><label>Brand</label><input id="np-brand"></div><div><label>Category *</label><select id="np-cat">${categories.map(c => `<option value="${esc(c.id)}">${esc(c.name)}</option>`).join('')}</select></div></div>
+        <div class="grid2"><div><label>Selling price ₹ *</label><input id="np-price" type="number" min="1"></div><div><label>MRP ₹</label><input id="np-old" type="number" min="0"></div></div>
+        <div class="grid2"><div><label>Units in stock</label><input id="np-qty" type="number" min="0" value="0"></div><div><label>Expiry date</label><input id="np-exp" type="date"></div></div>
+        <label>Barcode (blank = auto)</label><input id="np-bc"><label>Photo</label><input id="np-file" type="file" accept="image/*">
+        <div class="row" style="margin-top:1rem"><button class="btn grey" onclick="closeSheet()">Cancel</button><button class="btn" onclick="saveProduct()">Save product</button></div>`);
+}
+const saveProduct = () => act(async () => {
+    const fd = new FormData(), v = id => $('#np-' + id).value.trim();
+    [['title', 'title'], ['variant', 'variant'], ['brand', 'brand'], ['category', 'cat'], ['price', 'price'], ['oldPrice', 'old'], ['quantity', 'qty'], ['expiry_date', 'exp'], ['barcode', 'bc']].forEach(([k, i]) => fd.append(k, v(i)));
+    if ($('#np-file').files[0]) fd.append('imageFile', $('#np-file').files[0]);
+    await api('/staff/products', { method: 'POST', body: fd }); closeSheet(); toast('Product added. It is live in the store.'); loadStock();
+});
+
+// ---------- PICKER: expiry ----------
+let expDays = 14;
+async function viewExpiry() {
+    const d = await api('/staff/expiry?days=' + expDays);
+    const row = (b, ex) => `<div class="card" style="${ex ? 'border-left:4px solid #ef4444' : ''}"><div class="row"><div><b>${esc(b.title)}</b> <span class="muted">(${esc(b.variant)})</span><div class="muted">Batch ${esc(b.batch_no)} · ${b.qty} unit(s) · exp ${esc(b.expiry_date)}</div></div>
+        <div style="text-align:right"><span class="tag ${ex ? 'r' : 'y'}">${ex ? 'expired' : b.days_left + ' day(s)'}</span><br><button class="btn red sm" style="margin-top:.4rem" onclick="writeoff(${b.id},${b.qty})">Remove from shelf</button></div></div></div>`;
+    $('#view').innerHTML = needPunchBanner() + `<div class="row"><h3>Expiry check</h3><select id="ed" style="width:auto" onchange="expDays=this.value;viewExpiry()">${[7, 14, 30, 60].map(n => `<option value="${n}" ${n == expDays ? 'selected' : ''}>next ${n} days</option>`).join('')}</select></div>
+        <div class="muted" style="margin-bottom:.6rem">Expired stock is never sold to customers. Remove it from the shelf and record it here.</div>
+        ${d.expired.length ? `<h3 style="color:#b91c1c">Expired (${d.expired.length})</h3>${d.expired.map(b => row(b, true)).join('')}` : ''}
+        <h3>Expiring soon (${d.soon.length})</h3>${d.soon.map(b => row(b, false)).join('') || '<div class="card muted">Nothing expiring in this period 🎉</div>'}`;
+}
+function writeoff(id, qty) {
+    sheet(`<h3>Remove from shelf</h3><label>How many units? (max ${qty})</label><input id="wo-q" type="number" min="1" max="${qty}" value="${qty}">
+        <label>Reason</label><select id="wo-r"><option value="expired">Expired</option><option value="damaged">Damaged</option><option value="other">Other</option></select>
+        <div class="row" style="margin-top:1rem"><button class="btn grey" onclick="closeSheet()">Cancel</button><button class="btn red" onclick="doWriteoff(${id})">Write off</button></div>`);
+}
+const doWriteoff = id => act(async () => { await api('/staff/writeoff', { method: 'POST', body: JSON.stringify({ batch_id: id, qty: $('#wo-q').value, reason: $('#wo-r').value }) }); closeSheet(); toast('Recorded'); viewExpiry(); });
+
+// ---------- PICKER: cycle count + audit ----------
+let cMode = 'cycle', cCat = '', cRows = [];
+function viewCount() {
+    $('#view').innerHTML = needPunchBanner() + `<h3>Stock count</h3>
+        <div class="grid2" style="margin-bottom:.6rem"><button class="btn ${cMode === 'cycle' ? '' : 'line'}" onclick="cMode='cycle';viewCount()">Cycle count</button><button class="btn ${cMode === 'audit' ? '' : 'line'}" onclick="cMode='audit';viewCount()">Full audit</button></div>
+        <div class="muted" style="margin-bottom:.6rem">${cMode === 'cycle' ? 'Search a few products, count what is physically on the shelf and in the back room, and enter the number.' : 'Pick an aisle (category) and count every product in it.'} The system quantity is hidden on purpose, so count honestly.</div>
+        ${cMode === 'cycle' ? '<input id="cq" placeholder="Search product or barcode">' : `<select id="cc"><option value="">Choose a category…</option>${categories.map(c => `<option value="${esc(c.id)}" ${c.id === cCat ? 'selected' : ''}>${esc(c.name)}</option>`).join('')}</select>`}
+        <div id="clist" style="margin-top:.8rem"></div><div id="cfoot"></div>`;
+    if (cMode === 'cycle') $('#cq').oninput = e => { clearTimeout(viewCount.t); viewCount.t = setTimeout(() => loadCount(e.target.value, 'all'), 250); };
+    else $('#cc').onchange = e => { cCat = e.target.value; if (cCat) loadCount('', cCat); };
+    if (cMode === 'audit' && cCat) loadCount('', cCat);
+}
+async function loadCount(q, cat) {
+    cRows = (await api(`/staff/inventory?q=${encodeURIComponent(q)}&category=${cat}`)).slice(0, q ? 12 : 200);
+    if (cMode === 'cycle' && !q) cRows = [];
+    $('#clist').innerHTML = cRows.map((r, i) => `<div class="card row"><div><b>${esc(r.title)}</b> <span class="muted">(${esc(r.variant)})</span><div class="muted">${esc(r.barcode)}</div></div><input id="cn-${i}" type="number" min="0" inputmode="numeric" placeholder="Count" style="width:90px"></div>`).join('')
+        || (cMode === 'cycle' ? '<div class="muted">Start typing to find a product.</div>' : '');
+    $('#cfoot').innerHTML = cRows.length ? `<label class="muted">Note (optional)</label><input id="cnote" placeholder="e.g. weekly audit, aisle 3"><button class="btn" style="width:100%;margin-top:.8rem" onclick="submitCount()">Submit count</button>` : '';
+}
+const submitCount = () => act(async () => {
+    const counts = cRows.map((r, i) => ({ barcode: r.barcode, counted: $('#cn-' + i).value })).filter(c => c.counted !== '');
+    if (!counts.length) throw new Error('Enter at least one count');
+    const r = await api('/staff/count', { method: 'POST', body: JSON.stringify({ mode: cMode, note: $('#cnote').value, counts }) });
+    sheet(`<h3>Count saved ✓</h3><div class="muted">${r.items.length} counted · ${r.mismatched} difference(s) · stock corrected</div>
+        <table style="margin-top:.6rem"><tr><th>Product</th><th>System</th><th>You</th><th>Diff</th></tr>${r.items.map(i => `<tr><td>${esc(i.title)}</td><td>${i.expected}</td><td>${i.counted}</td><td><b style="color:${i.diff ? '#ef4444' : '#16a34a'}">${i.diff > 0 ? '+' : ''}${i.diff}</b></td></tr>`).join('')}</table>
+        <button class="btn" style="width:100%;margin-top:1rem" onclick="closeSheet();viewCount()">Done</button>`);
+});
+
+// ---------- RIDER: deliveries ----------
+async function viewJobs() {
+    deliveries = await api('/staff/deliveries'); await refreshMe();
+    const nav = o => o.dest_lat != null ? `https://www.google.com/maps/dir/?api=1&destination=${o.dest_lat},${o.dest_lng}` : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(o.address)}`;
+    $('#view').innerHTML = needPunchBanner() + (me.cash > 0 ? `<div class="banner" style="background:#e0f2fe;border-color:#0284c7">💵 Cash collected, to hand in to the admin: <b>${money(me.cash)}</b></div>` : '') + `<h3>My deliveries <span class="tag g">${deliveries.mine.length}</span></h3>` + (deliveries.mine.map(o => `<div class="card">
+        <div class="row"><b>${esc(o.id)}</b>${o.payment_mode === 'COD' ? `<span class="tag y">Collect ${money(o.total_amount)} cash</span>` : '<span class="tag g">Paid online</span>'}</div>
+        <div style="margin:.4rem 0"><b>${esc(o.customer_name)}</b><div class="muted">${esc(o.address)}</div><div class="muted">${o.item_count} item(s)</div>${o.slot_label && !/^ASAP/.test(o.slot_label) ? `<div><span class="tag y">⏰ ${esc(o.slot_label)}</span></div>` : ''}</div>
+        <div class="grid2"><a class="btn blue" style="text-align:center;text-decoration:none" href="tel:${esc(o.customer_phone)}">📞 Call customer</a><a class="btn line" style="text-align:center;text-decoration:none" target="_blank" href="${nav(o)}">🧭 Navigate</a></div>
+        <button class="btn" style="width:100%;margin-top:.6rem" onclick="askOtp('${o.id}', ${o.payment_mode === 'COD' ? o.total_amount : 0})">Delivered ✓</button></div>`).join('') || '<div class="card muted">No active deliveries. Accept one below.</div>')
+        + `<h3>Ready for pickup <span class="tag">${deliveries.available.length}</span></h3>` + (deliveries.available.map(o => `<div class="card row"><div><b>${esc(o.id)}</b> · ${o.item_count} item(s)<div class="muted">${esc(o.address)}</div>${o.slot_label && !/^ASAP/.test(o.slot_label) ? `<span class="tag y">⏰ ${esc(o.slot_label)}</span>` : ''}</div><button class="btn" onclick="accept('${o.id}')">Accept</button></div>`).join('') || '<div class="card muted">Nothing waiting at the store.</div>');
+}
+const accept = id => act(async () => { await api(`/staff/orders/${id}/accept`, { method: 'POST' }); toast('Delivery accepted. Location sharing is on.'); viewJobs(); });
+function askOtp(id, cod) {
+    sheet(`<h3>Confirm delivery</h3>${cod ? `<div class="banner">Collect ${money(cod)} in cash first.</div>` : ''}<label>Ask the customer for their 4-digit delivery code</label>
+        <input id="otp" inputmode="numeric" maxlength="4" style="font-size:1.8rem;text-align:center;letter-spacing:.5rem">
+        <div class="row" style="margin-top:1rem"><button class="btn grey" onclick="closeSheet()">Cancel</button><button class="btn" onclick="deliver('${id}')">Confirm</button></div>`);
+}
+const deliver = id => act(async () => { await api(`/staff/orders/${id}/deliver`, { method: 'POST', body: JSON.stringify({ otp: $('#otp').value }) }); closeSheet(); toast('Delivered! 🎉'); viewJobs(); });
+
+// ---------- RIDER: location + map ----------
+function startTracking() {
+    if (watchId !== null || !navigator.geolocation) return;
+    watchId = navigator.geolocation.watchPosition(pos => {
+        myPos = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+        if (map) setMine();
+        if (Date.now() - lastSent > 5000) { lastSent = Date.now(); api('/staff/location', { method: 'POST', body: JSON.stringify(myPos) }).catch(() => {}); }
+    }, () => toast('Turn on location so customers can track you'), { enableHighAccuracy: true, maximumAge: 3000 });
+}
+function stopTracking() { if (watchId !== null) { navigator.geolocation.clearWatch(watchId); watchId = null; } }
+function setMine() { if (!myPos || !map) return; const ll = [myPos.lat, myPos.lng]; if (myMarker) myMarker.setLatLng(ll); else myMarker = L.marker(ll, { icon: pinIcon('🛵') }).addTo(map); }
+const pinIcon = e => L.divIcon({ html: `<div style="font-size:2.4rem;line-height:1;filter:drop-shadow(0 2px 3px rgba(0,0,0,.4))">${e}</div>`, className: '', iconSize: [30, 30], iconAnchor: [15, 28] });
+async function viewMap() {
+    $('#view').innerHTML = needPunchBanner() + '<h3>My route</h3><div id="map"></div><p class="muted" id="mapnote"></p>';
+    deliveries = await api('/staff/deliveries');
+    if (typeof L === 'undefined') return $('#map').innerHTML = '<p style="padding:1rem">The map needs an internet connection.</p>';
+    map = L.map('map').setView([19.2, 72.97], 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© OpenStreetMap' }).addTo(map);
+    const pts = []; deliveries.mine.forEach(o => { if (o.dest_lat != null) { destMarkers.push(L.marker([o.dest_lat, o.dest_lng], { icon: pinIcon('🏠') }).addTo(map).bindPopup(`<b>${esc(o.id)}</b><br>${esc(o.customer_name)}<br>${esc(o.address)}`)); pts.push([o.dest_lat, o.dest_lng]); } });
+    setMine(); if (myPos) pts.push([myPos.lat, myPos.lng]);
+    pts.length > 1 ? map.fitBounds(pts, { padding: [40, 40], maxZoom: 16 }) : pts.length ? map.setView(pts[0], 15) : 0;
+    $('#mapnote').innerText = !myPos ? 'Waiting for your GPS location…' : deliveries.mine.some(o => o.dest_lat == null) ? 'Some customers did not pin a location. Use the Navigate button on their order.' : '';
+    setTimeout(() => map && map.invalidateSize(), 250);
+}
+
+// ---------- ME: attendance + salary ----------
+let payMonth = new Date().toLocaleDateString('en-CA').slice(0, 7);
+async function viewMe() {
+    await refreshMe();
+    const p = await api('/staff/salary?month=' + payMonth), t = me.today;
+    $('#view').innerHTML = `<div class="card"><h3>Today</h3>${t && t.punch_in ? `<div>Punched in at <b>${t.punch_in.slice(11, 16)}</b>${t.late_min > 0 ? ` <span class="tag y">late ${t.late_min} min</span>` : ' <span class="tag g">on time</span>'}</div>${t.punch_out ? `<div>Punched out at <b>${t.punch_out.slice(11, 16)}</b></div>` : '<div class="muted">Shift in progress</div>'}` : '<div class="muted">You have not punched in today.</div>'}
+        <div class="muted" style="margin-top:.4rem">Your shift: ${esc(me.shift.start)} – ${esc(me.shift.end)} (10 minutes grace)</div></div>
+        <div class="card"><div class="row"><h3 style="margin:0">Salary</h3><input type="month" value="${payMonth}" style="width:auto" onchange="payMonth=this.value;viewMe()"></div>
+        <div class="grid2" style="margin-top:.8rem"><div class="stat"><b>${money(p.earned)}</b>earned so far</div><div class="stat"><b>${money(p.monthly_salary)}</b>monthly salary</div>
+        <div class="stat"><b>${p.days}</b>days present</div><div class="stat"><b>${p.hours}</b>hours worked</div>
+        <div class="stat"><b>${p.leave_days}</b>paid leave days</div><div class="stat"><b>${money(p.overtime_pay)}</b>overtime (${p.overtime_hours} h)</div></div>
+        <div class="muted" style="margin-top:.6rem">Daily rate ${money(p.daily_rate)} (salary ÷ 26) · ${p.late} late day(s) · overtime is paid at 1.5× after your shift ends</div>
+        <div style="margin-top:.6rem">${p.paid ? `<span class="tag g">Paid ${money(p.paid.amount)} on ${esc(String(p.paid.paid_at).slice(0, 10))}</span>` : '<span class="tag y">Not paid yet for this month</span>'}</div></div>
+        <div class="card"><h3>Attendance</h3><table><tr><th>Date</th><th>In</th><th>Out</th><th></th></tr>${p.rows.map(r => `<tr><td>${esc(r.day)}</td><td>${(r.punch_in || '').slice(11, 16)}</td><td>${(r.punch_out || '').slice(11, 16) || '-'}</td><td>${r.late_min > 0 ? '<span class="tag y">late</span>' : ''}</td></tr>`).join('') || '<tr><td colspan="4" class="muted">No attendance this month.</td></tr>'}</table></div>
+        ${me.rating && me.rating.n ? `<div class="card"><h3>Customer rating</h3><b style="font-size:1.4rem">⭐ ${me.rating.avg}</b> <span class="muted">from ${me.rating.n} delivery rating(s)</span></div>` : ''}
+        <div class="card"><h3>Leave</h3><div class="grid2"><div><label class="muted">From</label><input type="date" id="lv-from"></div><div><label class="muted">To</label><input type="date" id="lv-to"></div></div>
+            <input id="lv-reason" placeholder="Reason (optional)" style="margin-top:.5rem"><button class="btn" style="width:100%;margin-top:.5rem" onclick="requestLeave()">Request leave</button>
+            <div id="lv-list" style="margin-top:.6rem"></div></div>
+        <button class="btn blue" style="width:100%;margin-bottom:.6rem" onclick="enableAlerts()">🔔 Turn on phone alerts</button>
+        <button class="btn grey" style="width:100%" onclick="logout()">Sign out</button>`;
+    api('/staff/leaves').then(l => { $('#lv-list').innerHTML = l.map(x => `<div class="row" style="padding:.3rem 0"><span>${esc(x.from_date)} → ${esc(x.to_date)}</span><span class="tag ${x.status === 'approved' ? 'g' : x.status === 'rejected' ? 'r' : 'y'}">${esc(x.status)}</span></div>`).join('') || '<div class="muted">No leave requests.</div>'; }).catch(() => {});
+}
+const requestLeave = () => act(async () => { await api('/staff/leaves', { method: 'POST', body: JSON.stringify({ from_date: $('#lv-from').value, to_date: $('#lv-to').value || $('#lv-from').value, reason: $('#lv-reason').value }) }); toast('Leave requested'); viewMe(); });
+boot();
+</script>
+</body>
+</html>

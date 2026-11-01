@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groco - Instant Superstore</title>
+    <link rel="icon" type="image/icon" href="image/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body>
+
+<div class="top-eta-bar">
+    <span><i class="fa fa-bolt"></i> 10-Min Delivery to <strong>Thane, Maharashtra</strong></span>
+    <span class="eta-tag">SUPERSTORE OPEN</span>
+</div>
+
+<div class="overlay-backdrop" id="overlay-backdrop"></div>
+
+<header class="header" id="main-header">
+    <div class="header-left">
+        <a href="#home" class="logo"> <i class="fa fa-shopping-basket"></i> groco </a>
+        <button class="browse-cat-btn" id="open-categories-modal-btn">
+            <i class="fa fa-th-large"></i> All Categories <i class="fa fa-angle-down"></i>
+        </button>
+    </div>
+
+    <div class="header-search-pill" id="header-search-trigger">
+        <i class="fa fa-search"></i>
+        <span>Search atta, milk, chips, shampoo & 5,000+ items...</span>
+    </div>
+
+    <div class="icons">
+        <div class="fa fa-bars" id="menu-btn" title="Menu"></div>
+        <div class="fa fa-shopping-cart" id="cart-btn" title="Cart">
+            <span id="cart-count">0</span>
+        </div>
+        <div class="fa fa-user" id="login-btn" title="Account"></div>
+    </div>
+
+    <div class="shopping-cart" id="shopping-cart">
+        <div class="cart-header">
+            <h3>My Cart (<span id="cart-item-types">0</span> items)</h3>
+            <span class="close-cart" id="close-cart-btn">&times;</span>
+        </div>
+        
+        <div class="promo-box-wrap">
+            <input type="text" id="promo-input" placeholder="Coupon Code (GROCO50)">
+            <button type="button" id="apply-promo-btn">Apply</button>
+        </div>
+        <div id="promo-message"></div>
+
+        <div class="cart-items-container"></div>
+        
+        <div class="cart-summary">
+            <div class="summary-line"><span>Item Total:</span><span id="cart-subtotal">₹0</span></div>
+            <div class="summary-line"><span>Discount Savings:</span><span class="discount-txt" id="cart-savings">-₹0</span></div>
+            <div class="summary-line"><span>Delivery:</span><span id="cart-fee">-</span></div>
+            <div id="cart-note" style="font-size:1.2rem;color:#b45309;min-height:1.4rem;margin:.3rem 0;"></div>
+            <div class="summary-line"><span>Delivery Fee:</span><span class="free-badge">FREE</span></div>
+            <div class="summary-line total-line"><span>To Pay:</span><span id="cart-total-val">₹0</span></div>
+            <button class="btn checkout-btn" id="proceed-checkout-btn">Proceed To Checkout</button>
+        </div>
+    </div>
+
+    <!-- User Auth & My Orders Drawer -->
+    <div class="login-form" id="login-form">
+        <!-- 1. Sign In View -->
+        <div id="auth-signin-box">
+            <h3>Customer Sign In</h3>
+            <input type="email" id="cust-login-email" placeholder="Email" class="box" required autocomplete="email">
+            <input type="password" id="cust-login-password" placeholder="Password" class="box" required autocomplete="current-password">
+            <label style="display:flex;gap:.4rem;align-items:center;font-size:.85rem;color:#64748b;margin:.2rem 0;"><input type="checkbox" onchange="document.querySelector('#cust-login-password').type=this.checked?'text':'password'"> Show password</label>
+            <p id="auth-error-login" style="color:#ef4444;font-size:.9rem;min-height:1.2rem;"></p>
+            <a href="#" onclick="showReset();return false;" style="font-size:.9rem;">Forgot password?</a>
+            <button type="button" class="btn" style="width:100%; margin:1rem 0;" onclick="handleCustomerLogin()">Sign In</button>
+            <p>New to Groco? <a href="javascript:void(0)" onclick="toggleCustAuth('register')">Register here</a></p>
+        </div>
+
+        <!-- 2. Register View -->
+        <div id="auth-reset-box" style="display:none;">
+            <h3 style="margin-bottom:.6rem;">Reset your password</h3>
+            <input type="email" id="rs-email" placeholder="Your account email" class="box" autocomplete="email">
+            <button type="button" class="btn" style="width:100%;" id="rs-send">Send me a code</button>
+            <div id="rs-step2" style="display:none;margin-top:.8rem;">
+                <input type="text" id="rs-code" placeholder="6-digit code" class="box" maxlength="6" inputmode="numeric">
+                <input type="password" id="rs-pass" placeholder="New password (min 6)" class="box" autocomplete="new-password">
+                <button type="button" class="btn" style="width:100%;" id="rs-go">Change password</button>
+            </div>
+            <p id="rs-msg" style="font-size:.9rem;color:#64748b;min-height:1.2rem;margin:.5rem 0;"></p>
+            <a href="#" onclick="toggleCustAuth('login');return false;" style="font-size:.9rem;">Back to sign in</a>
+        </div>
+        <div id="auth-signup-box" style="display:none;">
+            <h3>Create Account</h3>
+            <input type="text" id="cust-reg-name" placeholder="Full Name" class="box" required>
+            <input type="email" id="cust-reg-email" placeholder="Email" class="box" required>
+            <input type="tel" id="cust-reg-phone" placeholder="Mobile number (10 digits)" class="box" maxlength="14" autocomplete="tel">
+            <input type="password" id="cust-reg-password" placeholder="Create password (min 6 characters)" class="box" required autocomplete="new-password">
+            <p id="auth-error-reg" style="color:#ef4444;font-size:.9rem;min-height:1.2rem;"></p>
+            <button type="button" class="btn" style="width:100%; margin:1rem 0;" onclick="handleCustomerRegister()">Sign Up</button>
+            <p>Already have an account? <a href="javascript:void(0)" onclick="toggleCustAuth('login')">Sign In</a></p>
+        </div>
+
+        <!-- 3. Customer Profile & My Orders -->
+        <div id="auth-profile-box" style="display:none; text-align:left;">
+            <div style="display:flex; align-items:center; gap:0.8rem; margin-bottom:1rem;">
+                <div style="width:45px; height:45px; border-radius:50%; background:#00b761; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:1.4rem;" id="cust-avatar">S</div>
+                <div>
+                    <h4 id="cust-name-display" style="font-size:1.3rem; color:#0f172a;">Customer</h4>
+                    <small id="cust-email-display" style="color:#64748b;">customer@gmail.com</small><br><small id="cust-phone-display" style="color:#64748b;"></small>
+                </div>
+            </div>
+
+            <div style="border-top:1px solid #e2e8f0; padding-top:0.8rem; margin-bottom:1rem;">
+                <h4 style="font-size:1.1rem; color:#0f172a; margin-bottom:0.5rem;"><i class="fa fa-shopping-bag" style="color:#00b761;"></i> My Orders <small id="live-dot" style="color:#00b761;font-weight:600;font-size:.75rem;">● live</small></h4>
+                <div id="customer-orders-list" style="max-height: 220px; overflow-y: auto;">
+                    <p style="font-size:0.85rem; color:#94a3b8;">Loading orders...</p>
+                </div>
+            </div>
+
+            <button type="button" class="btn" style="width:100%; background:#ef4444;" onclick="handleCustomerLogout()">Logout</button>
+        </div>
+    </div>
+
+</header>
+
+<div class="categories-picker-modal" id="categories-picker-modal">
+    <div class="categories-picker-content">
+        <div class="picker-header">
+            <h3>Select a Department</h3>
+            <span class="close-picker" id="close-picker-btn">&times;</span>
+        </div>
+        <div class="picker-grid" id="picker-grid"></div>
+    </div>
+</div>
+
+<div class="category-page-view" id="category-page-view" style="display:none;">
+    <div class="category-page-header">
+        <button class="back-home-btn" id="back-to-home-btn"><i class="fa fa-arrow-left"></i> Back to Home</button>
+        <div class="cat-page-title-wrap">
+            <h1 id="cat-page-heading">Category Name</h1>
+            <p id="cat-page-count">Showing fresh items</p>
+        </div>
+    </div>
+
+    <div class="category-page-layout">
+        <div class="subcat-sidebar" id="subcat-sidebar"></div>
+
+        <div class="category-products-area">
+            <div class="brand-chips-filter" id="brand-chips-filter"></div>
+            <div class="category-page-grid" id="category-page-grid"></div>
+        </div>
+    </div>
+</div>
+
+<div class="search-modal" id="search-modal">
+    <div class="search-box-wrapper">
+        <i class="fa fa-search search-icon"></i>
+        <input type="search" id="search-box" placeholder="Search across all categories..." autocomplete="off">
+        <i class="fa fa-times close-search-btn" id="close-search-btn" title="Close Search"></i>
+    </div>
+    <div class="search-dropdown" id="search-dropdown">
+        <div class="search-section" id="recent-search-section">
+            <div class="section-title">
+                <span><i class="fa fa-history"></i> Recent Searches</span>
+                <button type="button" class="clear-history-btn" id="clear-history-btn">Clear</button>
+            </div>
+            <div class="recent-chips" id="recent-chips"></div>
+        </div>
+        <div class="search-section">
+            <div class="section-title"><span><i class="fa fa-bolt"></i> Matching Items</span></div>
+            <div class="suggestions-list" id="suggestions-list"></div>
+        </div>
+    </div>
+</div>
+
+<div class="checkout-modal" id="checkout-modal">
+    <div class="checkout-card">
+        <div class="checkout-header">
+            <h3><i class="fa fa-shield"></i> Order Checkout</h3>
+            <span class="close-checkout" id="close-checkout-btn">&times;</span>
+        </div>
+        <div class="checkout-body">
+            <div class="checkout-section">
+                <h4><i class="fa fa-map-marker"></i> 1. Delivery Address</h4>
+                <div class="address-options" id="address-list"><p style="color:#94a3b8;font-size:1.2rem;">Loading addresses...</p></div>
+                <button type="button" class="btn" id="add-address-btn" style="margin-top:1rem;background:#fff;color:#00b761;border:1px solid #00b761;">+ Add new address</button>
+                <div id="address-form" style="display:none;margin-top:1rem;">
+                    <select id="ad-label" class="box" style="width:100%;margin:.3rem 0;"><option>Home</option><option>Work</option><option>Other</option></select>
+                    <input id="ad-line" class="box" style="width:100%;margin:.3rem 0;" placeholder="Flat / building, street, area, city, pincode">
+                    <input id="ad-phone" class="box" style="width:100%;margin:.3rem 0;" placeholder="Contact number for delivery" maxlength="14">
+                    <button type="button" class="btn" id="ad-locate" style="background:#0284c7;margin:.3rem 0;">📍 Pin my current location</button> <small id="ad-pin" style="color:#00b761;font-size:1.2rem;"></small>
+                    <p id="ad-error" style="color:#ef4444;font-size:1.1rem;min-height:1.2rem;"></p>
+                    <button type="button" class="btn" id="save-address-btn">Save address</button>
+                    <button type="button" class="btn" id="cancel-address-btn" style="background:#64748b;">Cancel</button>
+                </div>
+            </div>
+
+            <div class="checkout-section">
+                <h4><i class="fa fa-clock-o"></i> 2. Delivery Time</h4>
+                <select id="slot-select" class="box" style="width:100%;"></select>
+                <p id="slot-note" style="font-size:1.15rem;color:#64748b;margin-top:.5rem;"></p>
+            </div>
+
+            <div class="checkout-section">
+                <h4><i class="fa fa-credit-card"></i> 3. Payment Mode</h4>
+                <div class="payment-options">
+                    <label class="payment-card active">
+                        <input type="radio" name="payment_mode" value="ONLINE" checked>
+                        <span><i class="fa fa-mobile"></i> Pay online (UPI, cards, netbanking) <small id="pay-note" style="color:#b45309;"></small></span>
+                    </label>
+                    <label class="payment-card">
+                        <input type="radio" name="payment_mode" value="COD">
+                        <span><i class="fa fa-money"></i> Cash On Delivery (COD)</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="checkout-section invoice-section">
+                <h4><i class="fa fa-file-text-o"></i> Bill Summary</h4>
+                <div class="invoice-row"><span>Items Total:</span><span id="inv-mrp">₹0</span></div>
+                <div class="invoice-row"><span>Savings:</span><span class="discount-txt" id="inv-discount">-₹0</span></div>
+                <div class="invoice-row"><span>Delivery fee:</span><span id="inv-fee">Free</span></div>
+                <div class="invoice-row total-inv"><span>Final Payable:</span><span id="inv-total">₹0</span></div>
+            </div>
+
+            <button class="btn confirm-order-btn" id="confirm-order-btn">Confirm Order</button>
+        </div>
+    </div>
+</div>
+
+<div class="tracking-modal" id="tracking-modal">
+    <div class="tracking-card">
+        <span class="close-tracking" id="close-tracking-btn">&times;</span>
+        <div class="tracking-header">
+            <div class="truck-icon"><i class="fa fa-bicycle"></i></div>
+            <h3 id="tracking-title">Order Placed!</h3>
+            <p id="tracking-sub">Track your order below</p>
+        </div>
+        <div id="tracking-steps"></div>
+        <div id="track-extra"></div>
+        <div id="track-map"></div>
+        <div id="tracking-details" style="font-size:1.25rem;color:#334155;margin:1rem 0;"></div>
+        <div id="track-actions" style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1rem;"></div>
+        <button class="btn ok-tracking-btn" id="tracking-done-btn">Back to Shopping</button>
+    </div>
+</div>
+
+<div id="home-main-view">
+    <section class="g-hero" id="home">
+        <div class="g-hero-text">
+            <span class="g-pill"><i class="fa fa-bolt"></i> Delivery in about 10–15 minutes</span>
+            <h1>Fresh groceries,<br><span>delivered fast.</span></h1>
+            <p>Fruits, vegetables, dairy, staples and hundreds more everyday items from your neighbourhood store.</p>
+            <div class="g-hero-search" id="hero-search"><i class="fa fa-search"></i><span>Search for milk, atta, chips, shampoo…</span><button type="button" class="btn">Search</button></div>
+            <div class="g-hero-chips"><span><i class="fa fa-check-circle"></i> Quality checked</span><span><i class="fa fa-truck"></i> Free delivery</span><span><i class="fa fa-lock"></i> Pay by UPI or cash</span></div>
+        </div>
+        <div class="g-hero-art" aria-hidden="true"><span>🥦</span><span>🥛</span><span>🍎</span><span>🍞</span><span>🧀</span><span>🍅</span></div>
+    </section>
+
+    <section class="g-offers">
+        <div class="g-offer o1" onclick="copyCoupon()"><span class="em">🎟️</span><div><b>₹50 off on ₹299+</b><small>Use code GROCO50 in your cart</small></div></div>
+        <div class="g-offer o2" data-act="cat" data-cat="vegetables"><span class="em">🥬</span><div><b>Fresh vegetables</b><small>Picked and packed today</small></div></div>
+        <a class="g-offer o3" href="#shelf-under-99-sec"><span class="em">🏷️</span><div><b>Under ₹99 store</b><small>Pocket-friendly picks</small></div></a>
+    </section>
+
+    <section id="categories">
+        <div class="g-sec"><div><h2>Shop by category</h2><p>Everything you need, one tap away</p></div><a onclick="openCategoriesPickerModal()">See all</a></div>
+        <div class="category-pills-grid" id="category-pills-grid"></div>
+    </section>
+
+    <section class="g-shelf">
+        <div class="g-sec"><div><h2>⭐ Best sellers</h2><p>Most loved by our customers</p></div></div>
+        <div class="horizontal-scroll-shelf" id="shelf-bestsellers"></div>
+    </section>
+    <section class="g-shelf" id="shelf-new-sec" style="display:none">
+        <div class="g-sec"><div><h2>🆕 New arrivals</h2><p>Just added to the store</p></div></div>
+        <div class="horizontal-scroll-shelf" id="shelf-new"></div>
+    </section>
+    <section class="g-shelf">
+        <div class="g-sec"><div><h2>🥦 Fresh fruits & vegetables</h2><p>Fresh every morning</p></div></div>
+        <div class="horizontal-scroll-shelf" id="shelf-fresh-picks"></div>
+    </section>
+    <section class="g-shelf">
+        <div class="g-sec"><div><h2>☀️ Daily essentials</h2><p>Milk, atta, oil and more</p></div></div>
+        <div class="horizontal-scroll-shelf" id="shelf-daily-essentials"></div>
+    </section>
+    <div id="shelf-under-99-sec"></div>
+    <section class="g-shelf">
+        <div class="g-sec"><div><h2>🏷️ Under ₹99</h2><p>Small prices, big savings</p></div></div>
+        <div class="horizontal-scroll-shelf" id="shelf-under-99"></div>
+    </section>
+    <section class="g-shelf">
+        <div class="g-sec"><div><h2>🛍️ Under ₹199</h2><p>Value packs and home essentials</p></div></div>
+        <div class="horizontal-scroll-shelf" id="shelf-under-199"></div>
+    </section>
+
+    <section class="g-trust">
+        <div><i class="fa fa-leaf"></i><b>Fresh & quality checked</b><small>Every item is checked before packing</small></div>
+        <div><i class="fa fa-truck"></i><b>Fast delivery</b><small>Live tracking from store to door</small></div>
+        <div><i class="fa fa-tags"></i><b>Fair prices</b><small>No hidden delivery charges</small></div>
+        <div><i class="fa fa-shield"></i><b>Safe payments</b><small>UPI, cards or cash on delivery</small></div>
+    </section>
+</div>
+<div class="product-detail-modal" id="product-detail-modal">
+    <div class="product-detail-card" id="product-detail-content"></div>
+</div>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3> Groco <i class="fa fa-shopping-basket"></i></h3>
+            <p>Your neighborhood online grocery store delivering fresh daily essentials.</p>
+            <div class="share">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a> 
+                <a href="#" class="fa fa-instagram"></a> 
+                <a href="#" class="fa fa-linkedin"></a> 
+            </div> 
+        </div>
+
+        <div class="box">
+            <h3> Contact Info </h3>
+            <a href="tel:+917039919180" class="links"> <i class="fa fa-phone"></i> +91 7039919180</a>
+            <a href="mailto:support@grocostore.com" class="links"> <i class="fa fa-envelope"></i> support@grocostore.com</a>
+            <a href="#" class="links"> <i class="fa fa-map-marker"></i> Thane, Maharashtra, India</a>
+        </div>
+
+        <div class="box">
+            <h3> Quick Links </h3>
+            <a href="#home" class="links"> <i class="fa fa-arrow-right"></i> Home</a>
+            <a href="#categories" class="links"> <i class="fa fa-arrow-right"></i> Categories</a>
+            <a href="staff.html" class="links"> <i class="fa fa-arrow-right"></i> Staff login</a>
+            <a href="admin.html" class="links"> <i class="fa fa-arrow-right"></i> Admin</a>
+        </div>
+
+        <div class="box">
+            <h3> Newsletter </h3>
+            <p>Subscribe for discounts and updates.</p>
+            <form onsubmit="event.preventDefault(); showToast('Subscribed successfully!');">
+                <input type="email" placeholder="Your Email" class="email" required>
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+        </div>
+    </div>
+
+    <div class="credit">Created by <span>Shubham Kanaujiya</span> | All Rights Reserved</div>
+</section>
+
+<div class="toast-notify" id="toast-notify">Item added to cart!</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="js/script.js"></script>
+<div id="g-sheet-bg" onclick="if(event.target===this)closeSheet()"><div id="g-sheet"></div></div>
+</body>
+</html>
